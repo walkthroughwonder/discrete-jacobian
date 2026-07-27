@@ -149,9 +149,13 @@ Structural notes:
   (It is not sufficient: 130 ambiguous rules are rigid in range — e.g.
   doubled-edge LHS rules whose ambiguity is a benign multiset automorphism.)
 
-  **Main Conjecture (Rigidity).** A semantically locally-invertible rule
-  with no history ambiguity has injective one-step evolution on isomorphism
-  classes. — This is the Garden-of-Eden-shaped local criterion the program
-  was hunting; proving it (or finding the larger-scale counterexample) is
-  Track B's central problem, and the natural companion to the splice
-  counterexample in any write-up.
+  **RIGIDITY THEOREM (2026-07-27, formerly the Main Conjecture).** A
+  semantically locally-invertible rule with no history ambiguity has
+  injective one-step evolution on isomorphism classes — under every policy,
+  and for the successor relation itself. Elementary five-line proof
+  (PROOF_rigidity.md): transport the DPO undo of one application along the
+  isomorphism of results and case-split on whether its support hits the
+  other comatch — semantic D1 closes one case, unambiguity the other. The
+  perfect empirical necessity record was a theorem in disguise. Track B's
+  remaining central problem is the CONVERSE (dichotomy): does independent
+  ambiguity force eventual collision?

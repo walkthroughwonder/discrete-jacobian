@@ -22,9 +22,11 @@ to isomorphism, so that no updating-policy choice is involved. The flagship
 and checked against Mathlib with no unproven obligations. An exhaustive
 sweep of 489 small rules identifies *history ambiguity* — the existence of
 a reverse-match at a support other than the comatch yielding a different
-predecessor — as empirically necessary for collision (52/52 colliding rules
-ambiguous; all 56 unambiguous rules rigid at every tier tested), motivating
-a rigidity conjecture in the spirit of Garden-of-Eden theory. We position
+predecessor — as necessary for collision, first empirically (zero
+exceptions across all tiers) and then by an elementary theorem: a
+semantically locally-invertible, history-unambiguous rule has one-step
+evolution injective on isomorphism classes. The converse (a dichotomy)
+remains open. We position
 the results as sharpness witnesses for the sufficient reversibility
 conditions of Arrighi, Costes and Maignan, and state the Moore–Myhill
 question for dynamic topology, which appears to be open.
@@ -130,14 +132,23 @@ Numbers (all tier-stamped, "in range" only):
   (cert_deep_r2.json: the "unsplice" rule {(a,b),(b,c)} → {(a,a),(c,b)},
   two seeds two steps each to a common witness; nine-check verification).
 
-## 5. The Rigidity Conjecture
+## 5. The Rigidity Theorem
 
 Empirics: history ambiguity is necessary for collision in every tier tested
-(zero false negatives across 238 rules × 3 tiers); it is not sufficient
-(130 ambiguous rules rigid in range).
+(zero false negatives across 238 rules × 4 tiers); it is not sufficient
+(ambiguous-but-rigid rules persist through tier (5,4)).
 
-**Conjecture (weak form).** A semantically locally-invertible rule with no
-history ambiguity has injective one-step evolution on isomorphism classes.
+**Theorem (Rigidity).** A semantically locally-invertible rule with no
+history ambiguity has injective one-step evolution on isomorphism classes —
+under every updating policy, including the successor relation itself.
+
+*Proof sketch* (full proof: PROOF_rigidity.md): suppose two applications
+have isomorphic results. Transport the DPO undo of the second application
+along the isomorphism into the first result, and compare its support with
+the first comatch: if equal, semantic D1 forces the predecessors to agree;
+if different, history-unambiguity forces the same. Either way the sources
+are isomorphic. The empirical record (zero unambiguous colliders) is
+thereby explained rather than merely observed.
 
 **Open question (dichotomy).** Is history ambiguity *equivalent* to
 eventual collision? The evidence is mixed in an instructive way: one extra
