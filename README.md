@@ -1,5 +1,7 @@
 # The Discrete Jacobian Program
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21630926.svg)](https://doi.org/10.5281/zenodo.21630926)
+
 Can a locally invertible rewrite rule fail to be globally injective?
 **Yes** — and this repository contains the explicit certificates, an
 exhaustive small-scale sweep, a machine-checked Lean 4 proof, and the
@@ -64,5 +66,6 @@ The Lean proof compiles with any Mathlib-provisioned toolchain:
 
 ## License
 
-MIT (see LICENSE). If you build on this, a citation of the repository is
-appreciated.
+MIT (see LICENSE). To cite this work, use the Zenodo DOI:
+[10.5281/zenodo.21630926](https://doi.org/10.5281/zenodo.21630926)
+(all versions; v1.0.0 specifically is 10.5281/zenodo.21630927).
