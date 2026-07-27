@@ -1,0 +1,41 @@
+{
+ "kind": "R1-collision",
+ "policy": "min-successor",
+ "rules": [
+  [
+   [
+    [
+     "x",
+     "y"
+    ]
+   ],
+   []
+  ]
+ ],
+ "state1": [
+  [
+   0,
+   0
+  ],
+  [
+   0,
+   1
+  ]
+ ],
+ "state2": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ]
+ ],
+ "claimed_image": [
+  [
+   0,
+   0
+  ]
+ ]
+}

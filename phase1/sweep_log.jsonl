@@ -1,0 +1,62 @@
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v0", "v0"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v0", "v0"], ["v0", "v0"]]], "status": "identity-like"}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v0"], ["v0", "v1"]]], "status": "identity-like"}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v0"], ["v1", "v0"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v0"], ["v1", "v1"]]], "status": "not-semantic-d1"}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v1"]]], "status": "swept", "genuine_images": 1, "independent_pairs": 1, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v1"], ["v0", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v1"], ["v1", "v0"]]], "status": "not-semantic-d1"}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v1"], ["v1", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v1", "v0"]]], "status": "swept", "genuine_images": 1, "independent_pairs": 1, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v1", "v0"], ["v1", "v0"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v1", "v0"], ["v1", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v0"], ["v0", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v0"], ["v1", "v0"]]], "status": "identity-like"}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v0"], ["v1", "v1"]]], "status": "not-semantic-d1"}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v1"]]], "status": "swept", "genuine_images": 1, "independent_pairs": 1, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v1"], ["v0", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v1"], ["v1", "v0"]]], "status": "not-semantic-d1"}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v1"], ["v1", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v1", "v0"]]], "status": "swept", "genuine_images": 1, "independent_pairs": 1, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v1", "v0"], ["v1", "v0"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v1", "v0"], ["v1", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v0"], ["v0", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v0"], ["v1", "v0"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v0"], ["v1", "v1"]]], "status": "identity-like"}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v1"], ["v0", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v1"], ["v1", "v0"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v1"], ["v1", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v1", "v0"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v1", "v0"], ["v1", "v0"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v1", "v0"], ["v1", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v0"], ["v1", "v2"]]], "status": "identity-like"}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v0"], ["v2", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v1"], ["v0", "v2"]]], "status": "not-semantic-d1"}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v1"], ["v1", "v2"]]], "status": "swept", "genuine_images": 1, "independent_pairs": 1, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v1"], ["v2", "v0"]]], "status": "swept", "genuine_images": 1, "independent_pairs": 1, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v1"], ["v2", "v1"]]], "status": "not-semantic-d1"}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v1"], ["v2", "v2"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v2"], ["v1", "v0"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v2"], ["v1", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v2"], ["v1", "v2"]]], "status": "not-semantic-d1"}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v2"], ["v2", "v1"]]], "status": "swept", "genuine_images": 1, "independent_pairs": 1, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v1", "v0"], ["v1", "v2"]]], "status": "not-semantic-d1"}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v1", "v0"], ["v2", "v0"]]], "status": "not-semantic-d1"}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v1", "v0"], ["v2", "v1"]]], "status": "swept", "genuine_images": 1, "independent_pairs": 1, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v1", "v0"], ["v2", "v2"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v1", "v1"], ["v2", "v0"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v1", "v2"], ["v2", "v0"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v2", "v0"], ["v2", "v1"]]], "status": "not-semantic-d1"}
+{"rule": [[["v0", "v1"]], [["v0", "v0"]]], "status": "not-syntactic-d1"}
+{"rule": [[["v0", "v1"]], [["v0", "v0"], ["v0", "v0"]]], "status": "not-syntactic-d1"}
+{"rule": [[["v0", "v1"]], [["v0", "v0"], ["v0", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}
+{"rule": [[["v0", "v1"]], [["v0", "v0"], ["v0", "v2"]]], "status": "not-syntactic-d1"}
+{"rule": [[["v0", "v1"]], [["v0", "v0"], ["v1", "v0"]]], "status": "swept", "genuine_images": 1, "independent_pairs": 1, "downstream_pairs": 0}
+{"rule": [[["v0", "v1"]], [["v0", "v0"], ["v1", "v1"]]], "status": "not-semantic-d1"}
+{"rule": [[["v0", "v1"]], [["v0", "v0"], ["v1", "v2"]]], "status": "swept", "genuine_images": 3, "independent_pairs": 3, "downstream_pairs": 0}
+{"rule": [[["v0", "v1"]], [["v0", "v0"], ["v2", "v0"]]], "status": "not-syntactic-d1"}
+{"rule": [[["v0", "v1"]], [["v0", "v0"], ["v2", "v1"]]], "status": "swept", "genuine_images": 5, "independent_pairs": 5, "downstream_pairs": 0}
+{"rule": [[["v0", "v1"]], [["v0", "v0"], ["v2", "v2"]]], "status": "not-syntactic-d1"}
+{"rule": [[["v0", "v1"]], [["v0", "v1"]]], "status": "identity-like"}
+{"rule": [[["v0", "v1"]], [["v0", "v1"], ["v0", "v1"]]], "status": "swept", "genuine_images": 0, "independent_pairs": 0, "downstream_pairs": 0}

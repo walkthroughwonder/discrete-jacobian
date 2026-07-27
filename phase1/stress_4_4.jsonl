@@ -1,0 +1,238 @@
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v0", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.2}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v0", "v2"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v0", "v1"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.3}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v1", "v0"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v1", "v0"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.3}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v1", "v0"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v0", "v0"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v1", "v0"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v0", "v1"], ["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.3}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v0", "v0"], ["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v0"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 5, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v0", "v1"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.3}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 23, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v1", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v0", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.3}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v1"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v0"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 8, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v1"], ["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 1, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v1", "v2"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v0", "v1"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.3}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 24, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v1"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v1", "v0"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v2"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v1", "v0"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 7, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v2"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 8, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v1"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 23, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v0"], ["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 25, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v1", "v2"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 8, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v1", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 7, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v1", "v0"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 24, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v1", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v1"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 6, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v1"], ["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v0"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v2"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 0, "secs": 0.1}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v1"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 23, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v2"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 1, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v1"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 25, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v1", "v0"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 7, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v1", "v0"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 1, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v2"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 8, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v0"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 2, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v0", "v0"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v0"], ["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v1", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 7, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v1", "v0"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 23, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 8, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v1"], ["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v0"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 1, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v1", "v2"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 8, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v1"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 2, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 1, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v1"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": false, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v1", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v2"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 1, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v1"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 1, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v1"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 8, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v0", "v1"], ["v0", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 8, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v2"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 1, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v2"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v1", "v0"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v1", "v0"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v1", "v2"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 3, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v1", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v1", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 1, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v2"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 3, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v1"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 13, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v2", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 19, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v1", "v0"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 8, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v2"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 12, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v0", "v2"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 17, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v1"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 18, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v2"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 17, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v1", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 17, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v0", "v2"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 16, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v1", "v0"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 15, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v1", "v2"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 10, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v2"]], [["v1", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 18, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v1"]], [["v0", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 1, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"]], [["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 70, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v0", "v0"]], [["v1", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v0"]], [["v0", "v2"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v0", "v2"], ["v1", "v3"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 2, "artifacts": 0, "secs": 0.1}
+{"rule": [[["v0", "v1"]], [["v0", "v0"], ["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"]], [["v0", "v1"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v2", "v1"], ["v3", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 2, "artifacts": 0, "secs": 0.1}
+{"rule": [[["v0", "v1"]], [["v0", "v1"], ["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.1}
+{"rule": [[["v0", "v1"]], [["v0", "v1"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.1}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v0", "v0"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 7, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v0", "v0"], ["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 7, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v0", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 25, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v0"], ["v1", "v1"]], [["v2", "v0"], ["v3", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 2, "artifacts": 0, "secs": 0.1}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v0", "v0"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v0", "v1"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 7, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v0", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 7, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v0", "v1"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 7, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v0", "v2"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v0", "v1"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 25, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v0", "v2"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v1", "v0"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 1, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v0", "v2"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 11, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 25, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v1", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 7, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v1", "v0"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 7, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v1", "v2"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 11, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v1", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v1"]], [["v1", "v0"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 25, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v2"]], [["v0", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v2"]], [["v0", "v0"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v2"]], [["v0", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 1, "secs": 0.0}
+{"rule": [[["v0", "v1"]], [["v0", "v1"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.2}
+{"rule": [[["v0", "v1"], ["v0", "v2"]], [["v0", "v1"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v2"]], [["v0", "v2"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 1, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v2"]], [["v0", "v1"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 10, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v2"]], [["v0", "v2"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 10, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v2"]], [["v0", "v2"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v2"]], [["v1", "v0"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 3, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v2"]], [["v1", "v0"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 10, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v2"]], [["v1", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 1, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v0"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v2"]], [["v1", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 10, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"]], [["v0", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.2}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v0"], ["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v0", "v2"]], [["v1", "v2"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 1, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 5, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v0"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 2, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 8, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v0"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 5, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v1"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 2, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v1"], ["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v2"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 1, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v1"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 1, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v2"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v1"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 8, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v2"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 5, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v2"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 3, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 8, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v1", "v0"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v1", "v0"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v1", "v0"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 8, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v1", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v1", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 5, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v0", "v0"], ["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 7, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v2", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v1", "v2"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 3, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v0", "v0"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 6, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v0", "v2"], ["v1", "v3"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 2, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v2", "v1"], ["v3", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 2, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v0", "v0"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 23, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v0", "v1"], ["v0", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 1, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v0", "v1"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 23, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v0", "v1"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 1, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v0", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v0", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 7, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v0", "v2"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v1", "v0"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 25, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v0", "v2"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v0", "v2"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 8, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v1", "v0"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v1", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 6, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v2"]], [["v0", "v0"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 14, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v1", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v1", "v0"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 25, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v2"]], [["v0", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 17, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v1"]], [["v1", "v2"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 8, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v2"]], [["v0", "v1"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 13, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v2"]], [["v0", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 19, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v2"]], [["v0", "v2"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 19, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v2"]], [["v0", "v2"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 14, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v2"]], [["v0", "v2"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 15, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v0"]], [["v2", "v0"], ["v3", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 2, "artifacts": 0, "secs": 0.1}
+{"rule": [[["v0", "v1"], ["v1", "v2"]], [["v1", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 17, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v2"]], [["v1", "v0"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 17, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v2"]], [["v1", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 22, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v0"]], [["v0", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 19, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v0"]], [["v0", "v0"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 22, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v1", "v2"]], [["v1", "v2"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 18, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v0"]], [["v0", "v2"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 17, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v0"]], [["v0", "v1"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 14, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v0"]], [["v0", "v1"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 18, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v0"]], [["v0", "v2"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 17, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v0"]], [["v0", "v2"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 15, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v0"]], [["v1", "v0"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 17, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v0"]], [["v1", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 14, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v0"]], [["v1", "v2"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 19, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v0"]], [["v1", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 13, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v1"]], [["v0", "v1"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 2, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v1"]], [["v0", "v0"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 11, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v1"]], [["v0", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v1"]], [["v0", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 7, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v1"]], [["v0", "v2"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 10, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v1"]], [["v0", "v1"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v1"]], [["v1", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 9, "artifacts": 2, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v1"]], [["v0", "v2"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 5, "artifacts": 4, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v1"]], [["v0", "v2"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 7, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v1"]], [["v1", "v0"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 11, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v1"]], [["v1", "v0"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 4, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v2"]], [["v0", "v1"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 10, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v1"]], [["v1", "v2"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 5, "artifacts": 4, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v1"]], [["v1", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 10, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v2"]], [["v0", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 17, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v2"]], [["v0", "v0"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 18, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v2"]], [["v0", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 13, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v2"]], [["v1", "v0"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 19, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v2"]], [["v0", "v2"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 17, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v2"]], [["v0", "v2"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 15, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v2"]], [["v0", "v2"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 12, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v2"]], [["v1", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 16, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v2"]], [["v1", "v2"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 17, "artifacts": 0, "secs": 0.0}
+{"rule": [[["v0", "v1"], ["v2", "v2"]], [["v1", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 0, "artifacts": 18, "secs": 0.0}
+{"rule": [[["v0", "v1"]], [["v0", "v2"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 1, "artifacts": 0, "secs": 3.6}
+{"rule": [[["v0", "v1"]], [["v1", "v0"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 11, "artifacts": 0, "secs": 25.2}
+{"rule": [[["v0", "v1"]], [["v0", "v0"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 19, "artifacts": 0, "secs": 24.8}
+{"rule": [[["v0", "v1"]], [["v0", "v0"], ["v1", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 19, "artifacts": 0, "secs": 38.5}
+{"rule": [[["v0", "v1"]], [["v1", "v1"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 24, "artifacts": 0, "secs": 41.7}
+{"rule": [[["v0", "v1"]], [["v0", "v2"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 26, "artifacts": 0, "secs": 43.4}
+{"rule": [[["v0", "v1"]], [["v1", "v0"], ["v1", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 32, "artifacts": 0, "secs": 45.5}
+{"rule": [[["v0", "v1"]], [["v0", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 26, "artifacts": 0, "secs": 53.0}
+{"rule": [[["v0", "v1"]], [["v1", "v0"], ["v2", "v2"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 70, "artifacts": 0, "secs": 56.9}
+{"rule": [[["v0", "v1"]], [["v1", "v2"], ["v2", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 25, "artifacts": 0, "secs": 554.9}
+{"rule": [[["v0", "v1"]], [["v0", "v2"], ["v1", "v0"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 18, "artifacts": 0, "secs": 615.6}
+{"rule": [[["v0", "v1"]], [["v1", "v0"], ["v2", "v1"]]], "tier": [4, 4], "status": "ok", "ambiguous": true, "genuine": 23, "artifacts": 0, "secs": 668.5}

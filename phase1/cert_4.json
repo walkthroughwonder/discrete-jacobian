@@ -1,0 +1,78 @@
+{
+ "kind": "R1-collision",
+ "policy": "min-successor",
+ "rules": [
+  [
+   [
+    [
+     "v0",
+     "v0"
+    ],
+    [
+     "v1",
+     "v0"
+    ]
+   ],
+   [
+    [
+     "v0",
+     "v1"
+    ],
+    [
+     "v2",
+     "v2"
+    ]
+   ]
+  ]
+ ],
+ "state1": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   1,
+   2
+  ]
+ ],
+ "state2": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   2,
+   0
+  ]
+ ],
+ "claimed_image": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   2,
+   3
+  ]
+ ],
+ "reachability": {
+  "s_to_t": false,
+  "t_to_s": false,
+  "bounds": {
+   "max_states": 5000,
+   "max_verts": 8
+  }
+ }
+}
