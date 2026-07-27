@@ -2,8 +2,9 @@
 # explicit certificates, a machine-checked splice collision, and a rigidity conjecture
 
 *Draft v1, 2026-07-27. Author: Edwin Rosero (walkthroughwonder), with
-AI assistance (Claude, Anthropic) disclosed throughout. Status: internal
-draft — NOT for distribution until Edwin approves.*
+AI assistance (Claude, Anthropic) disclosed throughout. Status: public
+working draft — not peer reviewed; comments and corrections welcome via
+repository issues.*
 
 ## Abstract
 
