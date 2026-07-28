@@ -84,6 +84,26 @@ help-ask toward the open converse. It is ready for Edwin's final read.
   #4638/#4639: feedback, when it arrives, takes priority over this
   program.
 
+## Addendum 2026-07-28 — adjacent-project status (public facts only)
+
+- **Kourovka PRs #4638 (1.74) / #4639 (1.40) on formal-conjectures:** the
+  July 26 CI failures were addressed by the July 27 rebase onto
+  post-#4645 upstream main (`FormalConjecturesUtil` import). Verified
+  2026-07-28 in a clean environment: both files elaborate on Lean
+  v4.27.0 + Mathlib cache and pass the repo's style linters
+  (`autoImplicit=false`, ams/category/moduleDocstring/latex_docstring,
+  copyright, namespace) with only the intentional `sorry`s. Both proposal
+  issues (#1915, #1931) have maintainer go-aheads; #1931 is assigned.
+  Nothing left to push — just watch CI/review.
+- **Erdős #872:** PR #4226 (872.lean) merged upstream 2026-07-02.
+  Buddhdev's 2026-07-12 comment on erdosproblems.com/872 credits Edwin's
+  K₅ computation and claims an **unconditional**
+  L(n) ≥ c_δ·n(log log n)²/log n bound (revised manuscript public in
+  xa8zz/erdos-harness), with two selector arguments not yet in Lean.
+  Per Edwin's own 2026-07-08 forum comment, the promised **second
+  formal-conjectures PR** stating the improved bound is now unblocked —
+  a concrete next work item.
+
 ## Orientation map
 
 | File | What it is |
