@@ -55,7 +55,7 @@ undo; globally, the state forgets which application happened. The
 forgotten match is the discrete analogue of the forgotten branch of the
 covering map in the ℂ³ counterexample — a discrete monodromy.
 
-## What's proven, what's swept, what's conjectured
+## What's proven, what's swept, what's open
 
 - **Machine-checked:** the collision above — non-isomorphism, successor
   uniqueness up to isomorphism, and terminality (successors admit no
@@ -69,12 +69,21 @@ covering map in the ℂ³ counterexample — a discrete monodromy.
   distinct ancestry also occur, including certified merges that need two
   steps on each branch — merging is not just one-step collision in
   disguise.
-- **Conjectured:** collision seems to be governed by *history ambiguity* —
-  whether some image can be "read backwards" at a different location than
-  the one that produced it, yielding a different predecessor. Across every
-  rule and tier tested, ambiguity was necessary for collision with zero
-  exceptions. The rigidity conjecture (unambiguous ⟹ injective) and a
-  sharper dichotomy question are open.
+- **Proven (elementary proof, pending external scrutiny):** collision is
+  governed by *history ambiguity* — whether some image can be "read
+  backwards" at a different location than the one that produced it,
+  yielding a different predecessor. Across every rule and tier tested,
+  ambiguity was necessary for collision with zero exceptions — and that
+  perfect record turns out to be a theorem rather than a coincidence: a
+  locally invertible rule with no history ambiguity has one-step evolution
+  injective on isomorphism classes, under every updating policy. The proof
+  is a short support-comparison argument (PROOF_rigidity.md in the
+  repository); the sweeps were rediscovering it empirically.
+- **Open:** the converse (a dichotomy question) — does genuine history
+  ambiguity force eventual collision? Ambiguous-but-rigid rules persist
+  through every tier swept so far, so the naive converse needs at least a
+  refinement; the working notion is *independent* ambiguity, ambiguity not
+  explained by a symmetry of the rule itself.
 
 ## Why I think this matters for multiway systems
 
@@ -98,11 +107,12 @@ proof, and a working-draft note — is public:
 - Repository: https://github.com/walkthroughwonder/discrete-jacobian
 - Archived + citable: https://doi.org/10.5281/zenodo.21630926
 
-I'd love help with: (1) the rigidity conjecture — a proof should show
-unambiguity forces collisions to factor through isomorphisms of sources;
-(2) richer-tier searches (the pipeline is a few hundred lines of Python);
-(3) visualizations of the branchial picture of the splice — the merge is
-begging for a good multiway graph rendering.
+I'd love help with: (1) scrutiny of the rigidity theorem's proof
+(PROOF_rigidity.md — it is a page, and either right or instructively
+wrong), and the open converse: does independent history ambiguity force
+eventual collision?; (2) richer-tier searches (the pipeline is a few
+hundred lines of Python); (3) visualizations of the branchial picture of
+the splice — the merge is begging for a good multiway graph rendering.
 
 *Disclosure: this project was carried out in close collaboration with an
 AI assistant (Claude, Anthropic), including the searches, the Lean proof,

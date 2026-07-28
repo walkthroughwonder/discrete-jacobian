@@ -26,20 +26,18 @@ committed and pushed; the working tree is clean; `main` and
 | Ambiguity necessary for collision (52/52; all 56 unambiguous rules rigid) | Empirical at swept tiers — now *explained* by the theorem |
 | **Rigidity Theorem** (semantic D1 + history-unambiguous ⟹ one-step evolution injective up to iso, policy-free) | Hand proof, `PROOF_rigidity.md` — **pending scrutiny**: no second reader yet, no Lean. Say "theorem with proof, pending scrutiny" externally. |
 
-## Known inconsistency — fix before anything ships
+## Known inconsistency — RESOLVED 2026-07-28
 
-`WOLFRAM_POST.md` was drafted **before** the rigidity proof and is stale:
-line ~77 still calls rigidity a conjecture, and the help-wanted list
-(~line 101) asks the community to prove it. `NOTE_DRAFT.md` and
-`RESULTS.md` were upgraded in `37302ea`; the post was not. Revise it to
-match the theorem (and reframe the help-ask toward the open converse)
-before Edwin reads/posts it.
+`WOLFRAM_POST.md` was drafted before the rigidity proof and still called
+rigidity a conjecture. Fixed 2026-07-28 (remote session): the post now
+states the theorem (with the pending-scrutiny qualifier) and reframes the
+help-ask toward the open converse. It is ready for Edwin's final read.
 
 ## Work queue (priority order)
 
-1. **Revise `WOLFRAM_POST.md`** per above. Then it goes to Edwin for final
-   read. Posting happens **only under Edwin's account, only after his
-   sign-off** — the agent never posts it.
+1. ~~Revise `WOLFRAM_POST.md`~~ DONE 2026-07-28. Next step is Edwin's
+   final read. Posting happens **only under Edwin's account, only after
+   his sign-off** — the agent never posts it.
 2. **Residual reading obligation** (from VERDICT.md N3 residue in
    RESULTS.md): skim the Natural Computing 2020 CGD paper's exact
    definitions before any submission, so the frozen-topology citations are
@@ -99,7 +97,7 @@ before Edwin reads/posts it.
 | `ADVERSARIAL_REVIEW.md` | Six self-attacks and what survived |
 | `POSITIONING.md` | Novelty gate vs. Arrighi et al. — passed |
 | `NOTE_DRAFT.md` | The public working-draft write-up |
-| `WOLFRAM_POST.md` | Community post draft — **stale, see above** |
+| `WOLFRAM_POST.md` | Community post draft — theorem-consistent as of 2026-07-28, awaiting Edwin's read |
 | `phase1/` | Searcher (`search.py`, `maxsweep.py`), engine (`core.py`), independent verifier, 14 certs, sweep/stress logs |
 
 ## Reproduce
