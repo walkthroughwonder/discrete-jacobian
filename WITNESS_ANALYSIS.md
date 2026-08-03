@@ -117,13 +117,23 @@ across all tiers.
 
 Witness pairs are deduplicated on (S, P, T); per-rule cap 400 pairs.
 
-*(Holdout row FINAL, 2026-08-03; collider control still computing —
-its row lands in the follow-up commit.)*
+*(Both rows FINAL, 2026-08-03; zero errored rules in either group.)*
 
 | group | rules | pairs | orbit | oneway | independent | of which replayable (D-IA pairs) |
 |---|---|---|---|---|---|---|
 | ambiguous-rigid holdouts | 55 | 3320 | 2272 | 0 | 1048 | 274 |
-| colliders (control) | running | — | — | — | — | — |
+| colliders (control) | 182 | 13817 | 160 | 476 | 13181 | 8590 |
+
+**The control is a machine-check of Proposition B, and it passes
+perfectly: 182/182 collider rules have D-IA.** Proposition B *forces*
+this — a genuine (INDEPENDENT) policy collision implies an independent
+one-step relation-merge, which implies a replayable independent
+witness — so a single collider without D-IA would have refuted the
+proposition. None did. Among the colliders' 8590 D-IA pairs the
+min-successor policy realizes 4399 as f_min collisions and shields
+4191: policy shielding is common even for colliding rules, but for
+colliders at least one pair always breaks through in range — whereas
+for the 12 D-IA holdouts, none of their 274 pairs does.
 
 Headline classification of the 55 holdouts (final):
 

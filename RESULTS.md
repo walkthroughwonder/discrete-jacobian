@@ -159,3 +159,38 @@ Structural notes:
   perfect empirical necessity record was a theorem in disguise. Track B's
   remaining central problem is the CONVERSE (dichotomy): does independent
   ambiguity force eventual collision?
+
+## 2026-08-03 — Witness-level dichotomy analysis (D-IA); the converse resolved at relation level, open at policy level
+
+Full treatment: WITNESS_ANALYSIS.md; definitions: DEFINITIONS.md
+addendum; code/data: phase1/independent_ambiguity.py, ia_*.jsonl.
+
+- **Negative result (the replay obstruction).** The tempting converse
+  argument "ambiguity ⟹ relation-level non-injectivity via DPO undo" is
+  FALSE for vertex-creating rules: replaying the alternative predecessor
+  forward freshens vars(R)\vars(L), so it need not reach the shared
+  image at all (*phantom witnesses*: 774 of the holdouts' 3320 pairs,
+  4591 of the colliders' 13817). Replay is automatic iff no fresh
+  variables are needed (Proposition A).
+- **Hypothesis surfaced.** PROOF_rigidity's "one of them yields S₁" step
+  needs syntactic D1 (vars(L) ⊆ vars(R)) — satisfied by the entire gated
+  class, so nothing retracts; now explicit as remark 6.
+- **The relation-level dichotomy is CLOSED** (Proposition B): for the
+  gated class, replayable witnesses correspond exactly to one-step
+  relation-merges, preserving causal class; D-IA (a replayable AND
+  causally independent witness) ⟺ an INDEPENDENT one-step merge.
+- **Machine-check of Prop B: 182/182 colliders have D-IA** (forced by
+  the proposition; zero exceptions, zero errors).
+- **The 55 ambiguous-but-rigid holdouts partition exhaustively** into
+  three rigidity mechanisms: 25 orbit-rewind only, 18 all-phantom, and
+  **12 policy-shielded D-IA rules** — 274 certified independent
+  relation-merges, 0 realized by min-successor in range, none excusable
+  by census bounds. Colliders shield 4191 of their 8590 D-IA pairs too,
+  but always leak at least one.
+- **Q5 (the remaining open question).** Does policy shielding persist
+  at all tiers for the 12 frontier rules (a policy-rigidity theorem), or
+  break eventually (a collision)? The two heaviest frontier rules are
+  the edge-growers {(a,b)} → {(a,b),(b,c)} and {(a,b)} → {(a,b),(c,a)}.
+
+All claims (4,4)-probe-tier, reachability bounds as in the sweep;
+propositions exact and unbounded.
