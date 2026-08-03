@@ -145,20 +145,27 @@ def main():
     ap.add_argument("workers", type=int)
     ap.add_argument("outfile")
     ap.add_argument("--rules", default="holdouts",
-                    choices=["holdouts", "colliders", "all"])
+                    choices=["holdouts", "colliders", "all", "ia-frontier"])
     a = ap.parse_args()
 
     sel = []
-    for line in open("stress_4_4.jsonl"):
-        r = json.loads(line)
-        if r.get("status") != "ok":
-            continue
-        if a.rules == "holdouts" and r["ambiguous"] and not r["genuine"]:
-            sel.append(r["rule"])
-        elif a.rules == "colliders" and r["genuine"]:
-            sel.append(r["rule"])
-        elif a.rules == "all":
-            sel.append(r["rule"])
+    if a.rules == "ia-frontier":
+        # the D-IA-but-rigid rules from the (4,4) witness classification
+        for line in open("ia_holdouts_4_4.jsonl"):
+            r = json.loads(line)
+            if r.get("status") == "ok" and r.get("ia"):
+                sel.append(r["rule"])
+    else:
+        for line in open("stress_4_4.jsonl"):
+            r = json.loads(line)
+            if r.get("status") != "ok":
+                continue
+            if a.rules == "holdouts" and r["ambiguous"] and not r["genuine"]:
+                sel.append(r["rule"])
+            elif a.rules == "colliders" and r["genuine"]:
+                sel.append(r["rule"])
+            elif a.rules == "all":
+                sel.append(r["rule"])
     print(f"[ia {a.maxv},{a.maxe}] {len(sel)} rules, {a.workers} workers",
           flush=True)
     t0 = time.time()
