@@ -99,10 +99,11 @@ Structural notes:
    and D1 should forbid fresh-vertex re-anchoring; the write-up must defend
    the definition (or present the result as: HERE is the exact definitional
    boundary where discrete local-global rigidity fails).
-2. **Reading obligations outstanding** (VERDICT.md): Arrighi–Costes–Maignan
-   arXiv:2510.03296 (possible D1 overlap — if their sufficient conditions
-   exclude fresh-vertex re-anchoring, our examples probe exactly their
-   boundary) and the Natural Computing 2020 CGD paper.
+2. ~~Reading obligations outstanding~~ BOTH DISCHARGED: arXiv:2510.03296
+   via POSITIONING.md (novelty gate passed, N3), and the Natural
+   Computing 2020 CGD paper via CGD_BOUNDARY_NOTE.md (2026-08-03; the
+   frozen line confirmed — local invertibility unasked in their
+   framework, no GoE statement for dynamic topology exists there).
 3. ~~Vertex count is not preserved~~ RESOLVED: D3-strict collisions exist
    (18 rules), including loop-free pure rewiring and policy-independent
    instances. The "anonymity needs fresh room" hypothesis is refuted; the

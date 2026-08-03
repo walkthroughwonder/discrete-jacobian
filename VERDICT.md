@@ -28,10 +28,13 @@ The question pair at the heart of the program appears genuinely open:
    collision = their conditions are not necessary; publishable connection);
    if far, our lane is clear. Check their open-questions section explicitly
    for GoE-type statements.
-2. **Read in full: the Natural Computing 2020 CGD paper** for the exact
-   invertibility/vertex-preservation statements, so T1 (frozen-topology
-   reduction) cites them correctly and Q3's "dynamic class" boundary is drawn
-   where their theorems actually stop.
+2. ~~Read in full: the Natural Computing 2020 CGD paper~~ **DISCHARGED
+   2026-08-03** — see CGD_BOUNDARY_NOTE.md for the exact
+   invertibility/vertex-preservation statements and the frozen line.
+   Headline: per-application invertibility is never defined or
+   hypothesized in their framework; Moore–Myhill/Garden-of-Eden language
+   appears nowhere (one Gromov citation, explicitly pivoted away from);
+   Q4 remains open as far as this source is concerned.
 
 ## Refined main conjecture (what Phase 2 hunts, what Phase 3 attacks)
 
