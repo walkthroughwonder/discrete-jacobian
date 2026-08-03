@@ -84,6 +84,27 @@ help-ask toward the open converse. It is ready for Edwin's final read.
   #4638/#4639: feedback, when it arrives, takes priority over this
   program.
 
+## Addendum 2026-08-03 — dichotomy campaign complete; Arrighi call pending
+
+- **The converse is resolved at the relation level and open exactly at
+  the policy level.** See WITNESS_ANALYSIS.md (Props A/B, the phantom
+  witness obstruction, D-IA), DEFINITIONS.md addendum (Q5), RESULTS.md
+  dated section. Machine-check: 182/182 colliders have D-IA; the 55
+  holdouts partition 25 orbit / 18 phantom / 12 policy-shielded D-IA.
+  **Q5** (does policy shielding persist for the 12 frontier rules?) is
+  the program's new central question.
+- **PROOF_rigidity remark 6**: the syntactic-D1 hypothesis is now
+  explicit. Nothing retracts; state it proactively on the call.
+- **Arrighi/Costes/Maignan Zoom, this week** (reply of 08-02). Prep:
+  (1) remark 6 up front; (2) phantom-witness result; (3) the 12-rule Q5
+  frontier as new content; (4) cite cert_deep_r2.json if R2 end-to-end
+  certification is questioned; (5) DO the Natural Computing 2020 CGD
+  definitions skim (VERDICT.md obligation, still outstanding, now
+  time-critical); (6) consider merging this branch to main pre-call.
+- **Fleet coordination**: FLEET_ANSWER_M9.md here + ANSWER C1 in
+  zarankiewicz fleet/inbox_mac.txt (pushed to their main, 2cffda0)
+  answer the Mac's REQ M9/X2. Follow-ups arrive in either channel.
+
 ## Addendum 2026-07-28 — adjacent-project status (public facts only)
 
 - **Kourovka PRs #4638 (1.74) / #4639 (1.40) on formal-conjectures:** the
