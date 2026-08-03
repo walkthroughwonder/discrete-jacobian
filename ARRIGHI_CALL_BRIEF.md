@@ -41,10 +41,13 @@ question (Q5).
    partition 25 orbit-rewind / 18 all-phantom / **12 policy-shielded
    D-IA rules** — 274 certified one-step relation-merges of mutually
    unreachable states that the min-successor policy never realizes in
-   range. Does shielding persist at all tiers (a policy-rigidity
-   theorem) or break (a collision)? Genuinely new content for this
-   audience: relation-merge without policy-collision lives exactly in
-   the gap their context-preservation conditions occupy.
+   range — and escalation to the (5,4) probe tier holds the pattern:
+   343 more D-IA pairs, still **zero** policy realizations (600+ merges,
+   two tiers, perfect shielding). Does shielding persist at all tiers
+   (a policy-rigidity theorem) or break (a collision)? Evidence now
+   leans theorem. Genuinely new content for this audience:
+   relation-merge without policy-collision lives exactly in the gap
+   their context-preservation conditions occupy.
 5. **Positioning against their work** (CGD_BOUNDARY_NOTE.md). Their
    theory: global bijectivity in, local structure out, on a compact
    bounded-degree pointed space ("invertible implies reversible",

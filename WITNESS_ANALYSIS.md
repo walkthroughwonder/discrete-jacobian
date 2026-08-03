@@ -123,6 +123,18 @@ Witness pairs are deduplicated on (S, P, T); per-rule cap 400 pairs.
 |---|---|---|---|---|---|---|
 | ambiguous-rigid holdouts | 55 | 3320 | 2272 | 0 | 1048 | 274 |
 | colliders (control) | 182 | 13817 | 160 | 476 | 13181 | 8590 |
+| **Q5 frontier at (5,4) probes** | 12 | 1044 | 0 | 0 | 1044 | **343** |
+
+**Q5 escalation (2026-08-03, `ia_frontier_5_4.jsonl`):** at the richer
+(5,4) probe tier the 12 frontier rules hold 343 D-IA pairs —
+**policy-collide 0, shielded 343**, zero errors. Together with the
+(4,4) data and the (5,4) census rigidity of holdouts_5_4.jsonl, these
+rules now carry 600+ certified independent one-step relation-merges
+across two tiers with not a single min-successor realization. The
+evidence now leans toward a **policy-rigidity theorem** (shielding as a
+structural property of f_min on these families) rather than an eventual
+collision; proving shielding for the two edge-grower families is the
+concrete next theory target.
 
 **The control is a machine-check of Proposition B, and it passes
 perfectly: 182/182 collider rules have D-IA.** Proposition B *forces*
