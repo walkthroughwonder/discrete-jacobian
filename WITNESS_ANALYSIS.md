@@ -32,9 +32,9 @@ The monodromy that powers the whole program cuts both ways.
 Call a witness **replayable** if [T] ∈ successors([P]) genuinely (checked
 by forward search, not assumed). Empirically at the (4,4) probe tier:
 
-- the 55 ambiguous-but-rigid holdouts carry 182 phantom
-  (non-replayable) witness pairs out of 2668 total (provisional: 53/55
-  rules classified as of this commit; two BFS-heavy stragglers running);
+- the 55 ambiguous-but-rigid holdouts carry 774 phantom
+  (non-replayable) witness pairs out of 3320 total — the replay
+  obstruction is doing real work, not corner-case work;
 - the splice flagship (fully variable-preserving) has every witness
   replayable, as Proposition A predicts.
 
@@ -117,38 +117,42 @@ across all tiers.
 
 Witness pairs are deduplicated on (S, P, T); per-rule cap 400 pairs.
 
-*(Provisional table, 2026-08-03: 53/55 holdout rules done, two
-stragglers and the 182-collider control still computing; final numbers
-land in the follow-up commit.)*
+*(Holdout row FINAL, 2026-08-03; collider control still computing —
+its row lands in the follow-up commit.)*
 
 | group | rules | pairs | orbit | oneway | independent | of which replayable (D-IA pairs) |
 |---|---|---|---|---|---|---|
-| ambiguous-rigid holdouts | 53 of 55 | 2668 | 2272 | 0 | 396 | 214 |
+| ambiguous-rigid holdouts | 55 | 3320 | 2272 | 0 | 1048 | 274 |
 | colliders (control) | running | — | — | — | — | — |
 
-Headline classification of the 53 holdouts so far:
+Headline classification of the 55 holdouts (final):
 
 - rules with at least one D-IA pair (independent + replayable):
-  **10** — each is a certified one-step relation-merge of mutually
+  **12** — each is a certified one-step relation-merge of mutually
   unreachable states that the min-successor policy shields in-range
-  (policy-collide/shielded split over the 214 D-IA pairs: **0 / 214**);
+  (policy-collide/shielded split over the 274 D-IA pairs: **0 / 274**;
+  all 274 alternative predecessors lie inside the census, so census
+  overflow explains nothing);
 - rules whose independent witnesses are all phantom (non-replayable):
   **18**;
 - rules with no independent witnesses at all (orbit-rewind only):
   **25**.
 
 Interpretation. Holdout rigidity is not one phenomenon but three, and
-the partition is exhaustive (10 + 18 + 25 = 53): (i) for 25 rules the
+the partition is exhaustive (12 + 18 + 25 = 55): (i) for 25 rules the
 ambiguity never leaves an orbit — the sweeps' artifact quarantine was
 already the right lens; (ii) for 18 rules every causally independent
 reading is phantom — the replay obstruction of §2, i.e. rigidity by
-monodromy itself; (iii) for 10 rules genuine independent relation-merges
-exist and are *uniformly policy-shielded* — zero of 214 D-IA pairs
-produce an f_min collision in range. Group (iii) is the entire Q5
-frontier: either shielding persists at all tiers for these rules (a
-policy-rigidity phenomenon worth a theorem) or it breaks at some tier
-(a collision). Notably, no oneway witnesses occur at all in this
-population.
+monodromy itself; (iii) for 12 rules genuine independent relation-merges
+exist and are *uniformly policy-shielded* — zero of 274 D-IA pairs
+produce an f_min collision in range, with no census excuse available.
+Group (iii) is the entire Q5 frontier: either shielding persists at all
+tiers for these rules (a policy-rigidity phenomenon worth a theorem) or
+it breaks at some tier (a collision). Notably, no oneway witnesses occur
+at all in this population, and the two heaviest D-IA rules are the
+edge-growing pair {(a,b)} → {(a,b),(b,c)} and {(a,b)} → {(a,b),(c,a)}
+(326 witness pairs each, 296 of them phantom — growth makes most
+alternative readings unreplayable, but not all).
 
 ## 6. Verification notes
 
