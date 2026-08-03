@@ -43,14 +43,29 @@ Compare supports inside T₁:
 3. The empirical labels "unambiguous" are probe-bounded approximations of
    the theorem's hypothesis; a rule labeled unambiguous in range might be
    ambiguous at larger states. The theorem itself is exact and unbounded.
-4. What remains open is precisely the CONVERSE — the dichotomy question:
-   does (genuine, independent) history ambiguity force eventual collision?
-   The 55 ambiguous-but-rigid holdouts at (5,4) show the naive converse
-   needs at least a refinement (e.g. "independent ambiguity") to survive.
+4. *(Superseded 2026-08-03 — see WITNESS_ANALYSIS.md.)* The converse is
+   now CLOSED at the successor-relation level: for the studied class,
+   a replayable witness with non-isomorphic predecessor is literally a
+   one-step relation-merge, and conversely (Proposition B). The naive
+   converse fails for a different reason than first suspected — witness
+   replay can be blocked by fresh-vertex re-binding (the "phantom
+   witness" obstruction, Proposition A's complement). What remains open
+   is the POLICY dichotomy: does independent ambiguity (D-IA) force a
+   min-successor collision of mutually unreachable states at some tier?
 5. The proof is two case-splits over an exhaustive support comparison; a
    Lean formalization is plausible once matching/application are formalized
    generically (a bigger infrastructure lift than the concrete splice
    proof, but well-defined).
+6. **Hypothesis made explicit (2026-08-03).** The step "DPO says one of
+   them yields S₁" uses that some *fresh* reverse-match supported on the
+   comatch recovers the source — true when vars(L) ⊆ vars(R) (syntactic
+   D1), because then the reverse rule freshens no variable and the
+   retained-binding undo is realized by a fresh match. For rules outside
+   syntactic D1 the step can fail (the reverse of the replay obstruction
+   in WITNESS_ANALYSIS.md §2). Every rule in the swept class passes the
+   syntactic-D1 gate before semantic D1 is tested, so nothing claimed is
+   affected; the theorem statement should be read with "semantically D1"
+   meaning the gated combination (syntactic + semantic), as implemented.
 
 **Status.** Elementary and short enough to be checked by eye; not yet
 externally reviewed. Treat as "theorem with proof, pending scrutiny" in all

@@ -155,3 +155,30 @@ the discrete Jacobian counterexample in its strongest form.
   Garden-of-Eden states) equivalent to pre-injectivity (no collisions between
   states differing in a bounded region)? This is the Moore–Myhill question for
   rewriting with dynamic topology — see VERDICT.md on its apparent openness.
+
+---
+
+## Addendum 2026-08-03 — witness-level refinements (D-IA)
+
+Sharpening of the ambiguity predicate for the dichotomy program (full
+treatment and propositions: WITNESS_ANALYSIS.md).
+
+- **Witness.** (S, m, T, m2, P): a match m at S with traced result T and
+  comatch region c, plus a reverse-match m2 supported on an edge set ≠ c
+  whose application yields P with P ≇ S. "Ambiguous" = some witness
+  exists among the probes.
+- **Replayable witness.** [T] ∈ successors([P]) by genuine forward
+  search. NOT automatic: fresh-vertex re-binding blocks the replay for
+  vertex-creating rules (*phantom witnesses*); automatic when
+  vars(R) ⊆ vars(L) (WITNESS_ANALYSIS Proposition A).
+- **Causal class of a witness.** orbit / oneway / independent, by the
+  same bounded-BFS reachability as artifact classes (5)–(6) above.
+- **D-IA (independent ambiguity).** Some witness is both replayable and
+  independent. For the gated class this is equivalent to the existence
+  of an INDEPENDENT one-step merge of the successor relation
+  (WITNESS_ANALYSIS Proposition B).
+- **Q5 (policy dichotomy).** Does D-IA force an INDEPENDENT F_π
+  collision at some tier, for π = min-successor? Policy-shielding (f_min
+  diverting one side of a D-IA pair) is the only mechanism that can keep
+  a D-IA rule R1-rigid in range; Q5 asks whether it can persist
+  unboundedly.
