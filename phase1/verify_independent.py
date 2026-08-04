@@ -85,6 +85,38 @@ def one_step_images(edges, rules):
     return images
 
 
+def decode(canon_str):
+    """Inverse of canon's string encoding: 'a,b;c,d' -> [(a,b),(c,d)]."""
+    if canon_str == "empty":
+        return []
+    return [tuple(int(x) for x in part.split(","))
+            for part in canon_str.split(";")]
+
+
+def bounded_unreachable(src, dst_canon, rules, max_states, max_verts):
+    """True iff dst is NOT reached from src by BFS within the stated bounds.
+    Independent reimplementation (expands via one_step_images + decode);
+    a True answer is bounds-relative, exactly as documented in the cert."""
+    src_c = canon(src)
+    if src_c == dst_canon:
+        return False
+    seen = {src_c}
+    frontier = [src]
+    while frontier and len(seen) < max_states:
+        nxt = []
+        for st in frontier:
+            if len({v for e in st for v in e}) > max_verts:
+                continue
+            for img in one_step_images(st, rules):
+                if img == dst_canon:
+                    return False
+                if img not in seen:
+                    seen.add(img)
+                    nxt.append(decode(img))
+        frontier = nxt
+    return True
+
+
 def verify_r2(cert):
     """Independently replay an R2-deep-merge path certificate: every step of
     both paths must be a legal one-step image, endpoints must meet at the
@@ -121,7 +153,9 @@ def main(path):
     if cert["kind"] == "R2-deep-merge":
         return verify_r2(cert)
     assert cert["kind"] == "R1-collision", "unknown certificate kind"
-    assert cert["policy"] == "min-successor", "unknown policy"
+    policy = cert["policy"]
+    assert policy in ("min-successor", "max-successor"), "unknown policy"
+    pick = min if policy == "min-successor" else max
     rules = [(tuple(tuple(e) for e in lhs), tuple(tuple(e) for e in rhs))
              for lhs, rhs in cert["rules"]]
     s1 = [tuple(e) for e in cert["state1"]]
@@ -135,12 +169,21 @@ def main(path):
     im1, im2 = one_step_images(s1, rules), one_step_images(s2, rules)
     checks.append(("state1 has successors", bool(im1)))
     checks.append(("state2 has successors", bool(im2)))
-    f1 = min(im1) if im1 else None
-    f2 = min(im2) if im2 else None
-    checks.append(("policy images agree", f1 == f2 and f1 is not None))
+    f1 = pick(im1) if im1 else None
+    f2 = pick(im2) if im2 else None
+    checks.append((f"policy images agree ({policy})",
+                   f1 == f2 and f1 is not None))
 
     claimed = canon([tuple(e) for e in cert["claimed_image"]])
     checks.append(("claimed image matches recomputation", f1 == claimed))
+
+    if "independence_bounds" in cert:
+        b = cert["independence_bounds"]
+        ms, mv = int(b["max_states"]), int(b["max_verts"])
+        checks.append((f"state2 unreachable from state1 (bounds {ms},{mv})",
+                       bounded_unreachable(s1, c2, rules, ms, mv)))
+        checks.append((f"state1 unreachable from state2 (bounds {ms},{mv})",
+                       bounded_unreachable(s2, c1, rules, ms, mv)))
 
     ok = all(passed for _, passed in checks)
     for name, passed in checks:

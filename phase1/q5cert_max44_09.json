@@ -1,0 +1,91 @@
+{
+ "kind": "R1-collision",
+ "policy": "max-successor",
+ "tier": [
+  4,
+  4
+ ],
+ "rules": [
+  [
+   [
+    [
+     "v0",
+     "v1"
+    ],
+    [
+     "v1",
+     "v1"
+    ]
+   ],
+   [
+    [
+     "v1",
+     "v0"
+    ],
+    [
+     "v1",
+     "v0"
+    ]
+   ]
+  ]
+ ],
+ "state1": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   2,
+   0
+  ]
+ ],
+ "state2": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   1,
+   2
+  ]
+ ],
+ "claimed_image": [
+  [
+   0,
+   1
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   1,
+   2
+  ]
+ ],
+ "independence_bounds": {
+  "max_states": 2000,
+  "max_verts": 7
+ },
+ "note": "Q5 policy-relativity: genuine collision under the max-successor canonical policy; pair INDEPENDENT within stated bounds"
+}

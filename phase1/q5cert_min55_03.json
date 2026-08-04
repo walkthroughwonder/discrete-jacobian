@@ -1,0 +1,103 @@
+{
+ "kind": "R1-collision",
+ "policy": "min-successor",
+ "tier": [
+  5,
+  5
+ ],
+ "rules": [
+  [
+   [
+    [
+     "v0",
+     "v0"
+    ],
+    [
+     "v1",
+     "v1"
+    ]
+   ],
+   [
+    [
+     "v1",
+     "v0"
+    ],
+    [
+     "v1",
+     "v0"
+    ]
+   ]
+  ]
+ ],
+ "state1": [
+  [
+   0,
+   0
+  ],
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   1
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   1,
+   2
+  ]
+ ],
+ "state2": [
+  [
+   0,
+   0
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   1,
+   1
+  ],
+  [
+   2,
+   2
+  ]
+ ],
+ "claimed_image": [
+  [
+   0,
+   0
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   1,
+   2
+  ]
+ ],
+ "independence_bounds": {
+  "max_states": 2000,
+  "max_verts": 7
+ },
+ "note": "Q5 stratum 1: 2->2 frontier rule, census-bound artifact resolved at (5,5); pair INDEPENDENT within stated bounds"
+}

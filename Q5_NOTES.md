@@ -39,9 +39,9 @@ mutually unreachable in both directions.
 
 f_max = lexicographically maximal canonical successor: isomorphism-
 invariant, on exactly the same footing as f_min. At (4,4) it realizes
-genuine collisions for 7 of the 12 rules (the three loop/doubling
-growers spectacularly: 22, 22, 16 images), including the exact D-IA
-pairs that f_min shields — e.g. the add-loop-at-tail grower realizes
+genuine collisions for 6 of the 12 rules — three 2→2 rules and the
+three loop/doubling growers (the latter spectacularly: 22, 22, 16
+images) — including the exact D-IA pairs that f_min shields — e.g. the add-loop-at-tail grower realizes
 S = {(0,0),(0,0),(0,1),(1,0)}, P = {(0,0),(0,1),(1,0),(1,1)} onto their
 shared image, the pair recorded in WITNESS_ANALYSIS's own example
 field.
@@ -85,12 +85,19 @@ canonical evolution. Attack: characterize min/max-successors of
 pendant-growth explicitly (the added pendant's location in the
 canonical form) and prove the inversion map well-defined.
 
-## 6. Verification obligations before any external claim
+## 6. Verification status
 
-1. Extend `verify_independent.py` with a policy parameter; re-verify
-   from scratch: the seven (5,5) min-collisions and the seven (4,4)
-   max-collisions (fleet standard: independent verification or it
-   didn't happen).
-2. Certify one representative pair per stratum as a JSON certificate.
-3. Stress the hard core at (6,5)/(5,6) under both policies.
-4. Tier-stamp everything above; nothing here exceeds its stated census.
+1. ~~Extend `verify_independent.py` with a policy parameter~~ **DONE
+   2026-08-03**: policy dispatch (min/max) plus a NEW verifier-side
+   bounded independence check (its own BFS via `one_step_images` +
+   `decode`), activated by an `independence_bounds` certificate field.
+2. ~~Certify the collisions~~ **DONE**: 13 certificates
+   (`q5cert_min55_*.json` × 7, `q5cert_max44_*.json` × 6 — complete
+   coverage of every colliding rule under each policy), each carrying
+   policy, tier, and independence bounds. **All 13 CONFIRMED by the
+   independent verifier**, including its own both-direction
+   unreachability check. Legacy regressions (cert_flagship,
+   cert_deep_r2, test_sanity) still pass.
+3. OPEN: stress the two-rule hard core at (6,5)/(5,6) under both
+   policies; attempt the pendant coherence proof.
+4. All claims tier-stamped; nothing here exceeds its stated census.
