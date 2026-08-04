@@ -1,0 +1,51 @@
+{"core": [], "rule": "out", "kmax": 6, "status": "ok", "checked": 48, "collisions": 0, "examples": [], "secs": 8.3}
+{"core": [], "rule": "in", "kmax": 6, "status": "ok", "checked": 48, "collisions": 0, "examples": [], "secs": 12.1}
+{"core": [[0, 0]], "rule": "out", "kmax": 5, "status": "ok", "checked": 74, "collisions": 0, "examples": [], "secs": 12.5}
+{"core": [[0, 0], [0, 0]], "rule": "out", "kmax": 5, "status": "ok", "checked": 74, "collisions": 0, "examples": [], "secs": 14.5}
+{"core": [[0, 0], [0, 0], [0, 0]], "rule": "out", "kmax": 5, "status": "ok", "checked": 74, "collisions": 0, "examples": [], "secs": 15.6}
+{"core": [[0, 0], [0, 0], [0, 0], [1, 1]], "rule": "out", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 16.0}
+{"core": [[0, 0]], "rule": "in", "kmax": 5, "status": "ok", "checked": 74, "collisions": 0, "examples": [], "secs": 16.5}
+{"core": [[0, 0], [0, 0], [0, 0], [1, 0]], "rule": "out", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 19.0}
+{"core": [[0, 0], [0, 0], [0, 0], [1, 1]], "rule": "in", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 20.4}
+{"core": [[0, 0], [0, 0]], "rule": "in", "kmax": 5, "status": "ok", "checked": 74, "collisions": 0, "examples": [], "secs": 21.0}
+{"core": [[0, 0], [0, 0], [0, 0], [0, 0]], "rule": "out", "kmax": 5, "status": "ok", "checked": 74, "collisions": 0, "examples": [], "secs": 21.4}
+{"core": [[0, 0], [0, 0], [0, 0], [0, 0]], "rule": "in", "kmax": 5, "status": "ok", "checked": 74, "collisions": 0, "examples": [], "secs": 22.6}
+{"core": [[0, 0], [0, 0], [0, 0], [1, 0]], "rule": "in", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 22.8}
+{"core": [[0, 0], [0, 0], [0, 0]], "rule": "in", "kmax": 5, "status": "ok", "checked": 74, "collisions": 0, "examples": [], "secs": 22.9}
+{"core": [[0, 0], [0, 0], [0, 1], [0, 1]], "rule": "out", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 17.5}
+{"core": [[0, 0], [0, 0], [0, 1], [2, 1]], "rule": "out", "kmax": 4, "status": "ok", "checked": 44, "collisions": 0, "examples": [], "secs": 10.7}
+{"core": [[0, 0], [0, 0], [0, 1], [1, 0]], "rule": "out", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 18.4}
+{"core": [[0, 0], [0, 0], [0, 1], [1, 1]], "rule": "out", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 16.3}
+{"core": [[0, 0], [0, 0], [1, 0], [2, 0]], "rule": "out", "kmax": 4, "status": "ok", "checked": 29, "collisions": 0, "examples": [], "secs": 6.7}
+{"core": [[0, 0], [0, 0], [0, 1], [2, 1]], "rule": "in", "kmax": 4, "status": "ok", "checked": 44, "collisions": 0, "examples": [], "secs": 14.0}
+{"core": [[0, 0], [0, 0], [1, 0], [2, 0]], "rule": "in", "kmax": 4, "status": "ok", "checked": 29, "collisions": 0, "examples": [], "secs": 8.9}
+{"core": [[0, 0], [0, 0], [1, 0]], "rule": "out", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 15.6}
+{"core": [[0, 0], [0, 0], [0, 1], [0, 1]], "rule": "in", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 24.5}
+{"core": [[0, 0], [0, 0], [1, 0], [1, 1]], "rule": "out", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 17.5}
+{"core": [[0, 0], [0, 0], [1, 0], [1, 0]], "rule": "out", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 19.0}
+{"core": [[0, 0], [0, 0], [1, 0], [2, 1]], "rule": "out", "kmax": 4, "status": "ok", "checked": 44, "collisions": 0, "examples": [], "secs": 10.4}
+{"core": [[0, 0], [0, 0], [0, 1], [1, 1]], "rule": "in", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 25.5}
+{"core": [[0, 0], [0, 0], [0, 1], [1, 0]], "rule": "in", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 27.8}
+{"core": [[0, 0], [0, 0], [1, 0], [2, 2]], "rule": "out", "kmax": 4, "status": "ok", "checked": 44, "collisions": 0, "examples": [], "secs": 10.6}
+{"core": [[0, 0], [0, 0], [1, 0], [1, 0]], "rule": "in", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 20.9}
+{"core": [[0, 0], [0, 0], [1, 0]], "rule": "in", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 23.6}
+{"core": [[0, 0], [0, 0], [1, 1], [1, 1]], "rule": "out", "kmax": 4, "status": "ok", "checked": 41, "collisions": 0, "examples": [], "secs": 9.3}
+{"core": [[0, 0], [0, 0], [1, 0], [2, 2]], "rule": "in", "kmax": 4, "status": "ok", "checked": 44, "collisions": 0, "examples": [], "secs": 13.2}
+{"core": [[0, 0], [0, 0], [1, 0], [2, 1]], "rule": "in", "kmax": 4, "status": "ok", "checked": 44, "collisions": 0, "examples": [], "secs": 14.6}
+{"core": [[0, 0], [0, 0], [1, 1], [2, 2]], "rule": "out", "kmax": 4, "status": "ok", "checked": 29, "collisions": 0, "examples": [], "secs": 5.5}
+{"core": [[0, 0], [0, 0], [1, 0], [1, 1]], "rule": "in", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 24.6}
+{"core": [[0, 0], [0, 0], [1, 1], [2, 2]], "rule": "in", "kmax": 4, "status": "ok", "checked": 29, "collisions": 0, "examples": [], "secs": 6.3}
+{"core": [[0, 0], [0, 0], [1, 2], [3, 2]], "rule": "out", "kmax": 3, "status": "ok", "checked": 15, "collisions": 0, "examples": [], "secs": 3.3}
+{"core": [[0, 0], [0, 0], [1, 2], [3, 2]], "rule": "in", "kmax": 3, "status": "ok", "checked": 15, "collisions": 0, "examples": [], "secs": 3.5}
+{"core": [[0, 0], [0, 0], [1, 1]], "rule": "out", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 15.6}
+{"core": [[0, 0], [0, 0], [1, 1], [2, 1]], "rule": "out", "kmax": 4, "status": "ok", "checked": 44, "collisions": 0, "examples": [], "secs": 11.4}
+{"core": [[0, 0], [0, 0], [1, 1], [1, 1]], "rule": "in", "kmax": 4, "status": "ok", "checked": 41, "collisions": 0, "examples": [], "secs": 11.5}
+{"core": [[0, 0], [0, 0], [1, 2], [1, 2]], "rule": "out", "kmax": 4, "status": "ok", "checked": 44, "collisions": 0, "examples": [], "secs": 9.2}
+{"core": [[0, 0], [0, 0], [1, 2], [2, 1]], "rule": "out", "kmax": 4, "status": "ok", "checked": 29, "collisions": 0, "examples": [], "secs": 7.6}
+{"core": [[0, 0], [0, 0], [1, 1], [2, 1]], "rule": "in", "kmax": 4, "status": "ok", "checked": 44, "collisions": 0, "examples": [], "secs": 13.2}
+{"core": [[0, 0], [0, 0], [1, 1]], "rule": "in", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 19.1}
+{"core": [[0, 0], [0, 0], [1, 2], [2, 1]], "rule": "in", "kmax": 4, "status": "ok", "checked": 29, "collisions": 0, "examples": [], "secs": 9.3}
+{"core": [[0, 0], [0, 0], [1, 2], [1, 2]], "rule": "in", "kmax": 4, "status": "ok", "checked": 44, "collisions": 0, "examples": [], "secs": 12.2}
+{"core": [[0, 0], [0, 1], [0, 1], [2, 0]], "rule": "out", "kmax": 4, "status": "ok", "checked": 44, "collisions": 0, "examples": [], "secs": 9.5}
+{"core": [[0, 0], [0, 1], [0, 1], [2, 2]], "rule": "out", "kmax": 4, "status": "ok", "checked": 44, "collisions": 0, "examples": [], "secs": 8.2}
+{"core": [[0, 0], [0, 1], [0, 1]], "rule": "out", "kmax": 4, "status": "ok", "checked": 69, "collisions": 0, "examples": [], "secs": 16.4}
