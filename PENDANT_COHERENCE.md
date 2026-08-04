@@ -86,3 +86,37 @@ Lemmas A/B consist of two same-core, differently-decorated states —
 which is precisely where a targeted search should look next if the
 census stress stays dry: enumerate decorations of a fixed small core
 directly, escaping the global census size limit.
+
+---
+
+## Postscript, same night: the every-policy form is REFUTED; min-coherence survives and sharpens
+
+The (6,5)/(5,6) stress returned within the hour. **Under f_max both
+pendant rules collide** — 4 and 5 independent collision images at the
+(6,5) census (1952 states), 7 and 1 at (5,6) (7379 states) — all four
+representative pairs certified and **CONFIRMED by the independent
+verifier** (`q5cert_pendmax_*.json`), including its own both-direction
+unreachability check. The "every canonical policy" conjecture above is
+dead; the fresh-vertex mechanism protected nothing about max, it only
+needed a bigger census to break than the other growers did.
+
+What survives is stronger-shaped:
+
+- **Lemmas 0, A, B are theorems and unaffected** (relation-level; the
+  max collisions necessarily live inside single core classes, as
+  Lemma B requires).
+- **f_min remains collision-free for BOTH pendant rules through six
+  censuses** — (4,4), (5,4), (5,5), (6,4), (6,5), (5,6) — and for all
+  five growers everywhere tested, while all seven non-growing (2→2)
+  frontier rules min-collide at (5,5).
+
+**Conjecture (min-coherence of growth), replacing the above.** For
+strictly edge-growing rules (|R| > |L|; here the five 1→2 growers),
+the min-successor policy is injective on isomorphism classes.
+Heuristic: for growers, f_min always grows at the canonically most
+compressible site, a choice recoverable from the image; non-growing
+rewires enjoy no such downward pressure, and max's upward pressure
+destroys it for every rule. The reduced form via Lemma B still holds
+verbatim with π = min. Falsification arm next: decoration enumeration
+over fixed small cores under f_min; proof arm: characterize the
+min-extension site inside canon(S).

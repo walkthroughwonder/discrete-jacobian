@@ -42,15 +42,20 @@ question (Q5).
    / 12 D-IA rules — and the 12 then split three ways: the seven 2→2
    rules **collide under min at the (5,5) census** (holdout status was
    a census artifact; the forcing direction of the dichotomy holds);
-   three growers are **policy-relative** (min-rigid so far, max-
-   colliding at (4,4)); and a **two-rule hard core** — the fresh-vertex
-   pendant growers — resists both policies everywhere tested, with the
-   pendant-coherence conjecture saying every canonical policy is
-   injective for them: relation-level information loss invisible to
-   every deterministic evolution. That last object is the genuinely new
-   thing for this audience. (Caveat if asked: direct recomputation,
-   tier-stamped; independent re-verification of the new collisions is
-   queued.)
+   and all five growers are **policy-relative**: max realizes their
+   merges (the pendant pair only at richer censuses, (6,5)/(5,6)),
+   while **min stays collision-free for every grower through six
+   censuses**. Final tally: 12/12 frontier rules have genuine,
+   independently verified policy collisions under {min, max} — the
+   dichotomy's forcing direction holds policy-existentially across the
+   board — and the surviving conjecture is **min-coherence of growth**
+   (f_min injective for edge-growing rules), backed by two proven
+   structural lemmas: pendant-free states share no successor at all,
+   and the sink-leaf core is absolutely conserved by the successor
+   relation (PENDANT_COHERENCE.md). The conserved-core picture — the
+   skeleton rides along, information loss confined to the decoration
+   layer — is the genuinely new object for this audience. (All 17
+   collision certificates independently verified, tier-stamped.)
 5. **Positioning against their work** (CGD_BOUNDARY_NOTE.md). Their
    theory: global bijectivity in, local structure out, on a compact
    bounded-degree pointed space ("invertible implies reversible",

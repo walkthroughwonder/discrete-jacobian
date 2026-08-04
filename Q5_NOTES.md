@@ -29,7 +29,19 @@ policies at every tier tested.
 |---|---|---|---|---|
 | eventual colliders | all seven 2→2 rules | **collide at (5,5)** | 3 of 7 collide | dichotomy's forcing direction holds; holdout status was census-bound |
 | policy-relative | {(a,b)}→{(a,a),(a,b)}, {(a,b)}→{(a,b),(b,b)}, {(a,b)}→{(a,b),(a,b)} | rigid ≤(5,5),(6,4) | **collide** (22/22/16 images) | merges are policy-realizable; min-coherence open |
-| hard core | {(a,b)}→{(a,b),(b,c)}, {(a,b)}→{(a,b),(c,a)} | rigid ≤(5,5),(6,4) | rigid | both-policy coherence; the purest relation/policy gap witnesses |
+| hard core *(dissolved same night — see below)* | {(a,b)}→{(a,b),(b,c)}, {(a,b)}→{(a,b),(c,a)} | rigid ≤(6,5),(5,6) | rigid at (4,4)–(6,4); **collides at (6,5),(5,6)** | max breaks at richer censuses (certified); min-coherence survives |
+
+**Postscript (same night).** The hard-core stress broke the last two
+rules under f_max at (6,5)/(5,6) — four representative pairs certified
+and independently verified (`q5cert_pendmax_*.json`). Final tally:
+**12/12 frontier rules have genuine, independently verified policy
+collisions under {min, max}**; the policy-existential dichotomy (Q5b)
+is answered YES across the board, and "ambiguous-but-rigid" has fully
+dissolved into census bounds + policy choice. The sole surviving
+rigidity is f_min on the five growers (six censuses, zero collisions) —
+now the **min-coherence of growth** conjecture, with two proven
+structural lemmas behind it (PENDANT_COHERENCE.md: pendant-free
+rigidity; core conservation).
 
 (5,5) census = 1603 states; (6,4) = 356; genuineness = the sweep's
 orbit quarantine, and each rule's example pair was additionally checked

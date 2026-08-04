@@ -1,0 +1,91 @@
+{
+ "kind": "R1-collision",
+ "policy": "max-successor",
+ "tier": [
+  5,
+  6
+ ],
+ "rules": [
+  [
+   [
+    [
+     "v0",
+     "v1"
+    ]
+   ],
+   [
+    [
+     "v0",
+     "v1"
+    ],
+    [
+     "v2",
+     "v0"
+    ]
+   ]
+  ]
+ ],
+ "state1": [
+  [
+   0,
+   1
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   3,
+   1
+  ],
+  [
+   4,
+   2
+  ]
+ ],
+ "state2": [
+  [
+   0,
+   1
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   3,
+   2
+  ],
+  [
+   4,
+   3
+  ]
+ ],
+ "claimed_image": [
+  [
+   0,
+   1
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   3,
+   1
+  ],
+  [
+   4,
+   2
+  ],
+  [
+   5,
+   4
+  ]
+ ],
+ "independence_bounds": {
+  "max_states": 2000,
+  "max_verts": 7
+ },
+ "note": "Pendant-grower max-policy collision refuting the every-canonical-policy form of pendant coherence; pair INDEPENDENT within stated bounds"
+}
