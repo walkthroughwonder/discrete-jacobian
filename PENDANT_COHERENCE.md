@@ -142,3 +142,25 @@ complete per core class by Lemma B, disconnected decorations included)
 is aimed at. Note for that search: for growers, same-edge-count pairs
 are automatically mutually unreachable, so every collision it could
 find is INDEPENDENT by construction.
+
+## Decoration search verdict (2026-08-03, `q5_mindec.jsonl`)
+
+**Dry, completely.** 149 cores (every pendant-free state up to (4V,4E),
+plus the empty core) × both pendant rules = 298 complete stratum
+searches, 11,278 decorated states including all disconnected
+decorations within the vertex guard, reaching 9-edge states on ≤6
+vertices — beyond every global census. **Zero f_min collisions.**
+
+Where min-coherence for the pendant growers now stands:
+
+- **Proved for infinitely many pairs**: any two pendant-free states
+  (Lemma A — they share no successor at all).
+- **Exhaustively verified** on every decoration stratum over cores up
+  to (4V,4E) (this search), and on six global censuses up to
+  (6,5)/(5,6).
+- **Open**: decoration strata over larger cores. By Lemma B that is
+  the ONLY place a counterexample can live; the proof gap is exactly
+  "min-extension injective on decorations of a fixed core", now
+  verified for all small cores. Route: induction on the core, or a
+  direct canonical-form argument for decorated states robust to the
+  component-reshuffle phenomenon documented above.
