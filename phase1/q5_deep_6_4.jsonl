@@ -1,0 +1,5 @@
+{"rule": [[["v0", "v1"]], [["v0", "v1"], ["v1", "v1"]]], "tier": [6, 4], "status": "ok", "census": 356, "genuine": 0, "artifacts": 0, "secs": 50.6}
+{"rule": [[["v0", "v1"]], [["v0", "v1"], ["v0", "v1"]]], "tier": [6, 4], "status": "ok", "census": 356, "genuine": 0, "artifacts": 0, "secs": 50.8}
+{"rule": [[["v0", "v1"]], [["v0", "v1"], ["v1", "v2"]]], "tier": [6, 4], "status": "ok", "census": 356, "genuine": 0, "artifacts": 0, "secs": 53.1}
+{"rule": [[["v0", "v1"]], [["v0", "v0"], ["v0", "v1"]]], "tier": [6, 4], "status": "ok", "census": 356, "genuine": 0, "artifacts": 0, "secs": 54.5}
+{"rule": [[["v0", "v1"]], [["v0", "v1"], ["v2", "v0"]]], "tier": [6, 4], "status": "ok", "census": 356, "genuine": 0, "artifacts": 0, "secs": 55.6}

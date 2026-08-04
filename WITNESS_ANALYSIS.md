@@ -130,11 +130,17 @@ Witness pairs are deduplicated on (S, P, T); per-rule cap 400 pairs.
 **policy-collide 0, shielded 343**, zero errors. Together with the
 (4,4) data and the (5,4) census rigidity of holdouts_5_4.jsonl, these
 rules now carry 600+ certified independent one-step relation-merges
-across two tiers with not a single min-successor realization. The
-evidence now leans toward a **policy-rigidity theorem** (shielding as a
-structural property of f_min on these families) rather than an eventual
-collision; proving shielding for the two edge-grower families is the
-concrete next theory target.
+across two tiers with not a single min-successor realization.
+
+**Superseded hours later the same day — see Q5_NOTES.md.** The deep
+census hunt broke the pattern: at (5,5) all seven 2→2 frontier rules
+COLLIDE under f_min (independent example pairs verified), and under the
+equally-canonical f_max policy three of the five growers collide at
+(4,4). Ten of twelve frontier rules have genuine policy collisions;
+"ambiguous-but-rigid" was a census/policy artifact for them. The
+surviving hard core is exactly the two fresh-vertex pendant growers,
+rigid under both policies at every tier tested — see the pendant
+coherence conjecture (Q5_NOTES.md §5).
 
 **The control is a machine-check of Proposition B, and it passes
 perfectly: 182/182 collider rules have D-IA.** Proposition B *forces*

@@ -37,17 +37,20 @@ question (Q5).
    ways). With replayability as the missing condition, Propositions A/B
    close the relation-level dichotomy; machine-check: **182/182
    colliders have D-IA, zero exceptions**.
-4. **Q5, the new open question.** The 55 ambiguous-but-rigid rules
-   partition 25 orbit-rewind / 18 all-phantom / **12 policy-shielded
-   D-IA rules** — 274 certified one-step relation-merges of mutually
-   unreachable states that the min-successor policy never realizes in
-   range — and escalation to the (5,4) probe tier holds the pattern:
-   343 more D-IA pairs, still **zero** policy realizations (600+ merges,
-   two tiers, perfect shielding). Does shielding persist at all tiers
-   (a policy-rigidity theorem) or break (a collision)? Evidence now
-   leans theorem. Genuinely new content for this audience:
-   relation-merge without policy-collision lives exactly in the gap
-   their context-preservation conditions occupy.
+4. **Q5, resolved in strata the night before** (Q5_NOTES.md). The 55
+   ambiguous-but-rigid rules partition 25 orbit-rewind / 18 all-phantom
+   / 12 D-IA rules — and the 12 then split three ways: the seven 2→2
+   rules **collide under min at the (5,5) census** (holdout status was
+   a census artifact; the forcing direction of the dichotomy holds);
+   three growers are **policy-relative** (min-rigid so far, max-
+   colliding at (4,4)); and a **two-rule hard core** — the fresh-vertex
+   pendant growers — resists both policies everywhere tested, with the
+   pendant-coherence conjecture saying every canonical policy is
+   injective for them: relation-level information loss invisible to
+   every deterministic evolution. That last object is the genuinely new
+   thing for this audience. (Caveat if asked: direct recomputation,
+   tier-stamped; independent re-verification of the new collisions is
+   queued.)
 5. **Positioning against their work** (CGD_BOUNDARY_NOTE.md). Their
    theory: global bijectivity in, local structure out, on a compact
    bounded-degree pointed space ("invertible implies reversible",
