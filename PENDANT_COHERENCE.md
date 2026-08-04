@@ -120,3 +120,25 @@ destroys it for every rule. The reduced form via Lemma B still holds
 verbatim with π = min. Falsification arm next: decoration enumeration
 over fixed small cores under f_min; proof arm: characterize the
 min-extension site inside canon(S).
+
+## Proof-arm data point: the naive site characterization is FALSE
+
+On the (5,4) census, in 332 of 333 states f_min extends at the head
+with minimal canonical label. The exception is genuine and
+instructive:
+
+    S = out-cherry ⊔ 2-cycle = ((0,1),(0,2)) ⊔ ((3,4),(4,3))
+
+Extending at a cherry leaf (canonical heads 1,2) yields
+((0,1),(0,2),(1,3),(4,5),(5,4)); extending inside the 2-cycle
+(canonical heads 3,4) yields ((0,1),(0,2),(1,0),(3,4),(3,5)) — smaller,
+because the decorated CYCLE component now sorts before the cherry and
+the whole labeling reshuffles. So min's choice is a global optimization
+sensitive to component reordering, not a local head-rank rule. Any
+proof must handle disconnected states; conversely, disconnected
+multi-component states are where a counterexample would most plausibly
+live — which is what the decoration search (`q5_min_decoration.py`,
+complete per core class by Lemma B, disconnected decorations included)
+is aimed at. Note for that search: for growers, same-edge-count pairs
+are automatically mutually unreachable, so every collision it could
+find is INDEPENDENT by construction.
