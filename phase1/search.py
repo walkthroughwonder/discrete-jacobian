@@ -3,6 +3,7 @@ policy, and report collisions F(S) = F(S') with S != S' (canonical forms).
 
 Emits certificates as JSON for the independent verifier.
 """
+import os
 import json
 import sys
 from itertools import product
@@ -112,6 +113,13 @@ if __name__ == "__main__":
         img, pre = sorted(collisions.items())[0]
         cert = certificate([delete_rule], pre[0], pre[1], img)
         out = sys.argv[1] if len(sys.argv) > 1 else "planted_cert.json"
+        # planted_cert.json is committed evidence; do not clobber it on a
+        # bare `python search.py`. An explicit argv[1] is a deliberate choice
+        # and is honoured.
+        if len(sys.argv) <= 1 and os.path.exists(out):
+            out = "planted_cert.rerun.json"
+            print(f"[cert] planted_cert.json exists and is committed "
+                  f"evidence; writing this run to {out} instead.")
         with open(out, "w") as f:
             json.dump(cert, f, indent=1)
         print(f"certificate written: {out}")

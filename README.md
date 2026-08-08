@@ -61,6 +61,16 @@ python verify_independent.py cert_flagship.json
 python maxsweep.py             # full 3-stage sweep (~5 min on 14 cores)
 ```
 
+These commands do not overwrite the committed evidence. `maxsweep.py`,
+`sweep_phase2.py`, and `search.py` write to a `.rerun` sibling when their
+default output already exists, so a rerun produces
+`maxsweep_log.rerun.jsonl` alongside the original for comparison. Pass
+`--out PATH` to choose a destination, or `--force` to overwrite
+deliberately. `phase1/maxsweep_log.jsonl` in particular is pinned by
+SHA-256 from `discrete-jacobian-research`
+(`scripts/audit_finite_prefix_obstruction.py`), so overwriting it breaks an
+audit in the other repository.
+
 The Lean proof compiles with any Mathlib-provisioned toolchain:
 `lake env lean lean/SpliceCollision.lean`.
 

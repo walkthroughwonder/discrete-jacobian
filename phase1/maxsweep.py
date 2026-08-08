@@ -15,6 +15,7 @@
 All bounds are explicit above (no silent caps). Log: maxsweep_log.jsonl.
 """
 import json
+import os
 import sys
 import time
 from concurrent.futures import ProcessPoolExecutor, as_completed
@@ -170,11 +171,43 @@ def work_r2(rules_key):
 
 # ---------- driver ----------
 
+def open_evidence_log(default_path):
+    """Open a log for writing without ever silently destroying evidence.
+
+    maxsweep_log.jsonl is committed evidence: RESULTS.md's headline
+    statistics are derived from it, and discrete-jacobian-research pins its
+    SHA-256 (scripts/audit_finite_prefix_obstruction.py,
+    EXPECTED_LOG_SHA256 = 7352ca0c...). README tells the reader to run this
+    script, and it used to open that exact path with "w" -- so one
+    documented run truncated the evidence and broke a cross-repo pinned
+    audit, with no warning and nothing to restore from.
+
+    Now: --out PATH writes where you say; otherwise, if the default already
+    exists, the run goes to a .rerun sibling and says so. --force is the
+    only way to overwrite, and you have to mean it.
+    """
+    argv = sys.argv
+    if "--out" in argv:
+        path = argv[argv.index("--out") + 1]
+    else:
+        path = default_path
+    if os.path.exists(path) and "--force" not in argv:
+        if "--out" in argv:
+            sys.exit(f"refusing to overwrite {path} (pass --force if you mean it)")
+        stem, ext = os.path.splitext(default_path)
+        path = f"{stem}.rerun{ext}"
+        print(f"[log] {default_path} exists and is committed evidence; "
+              f"writing this run to {path} instead.\n"
+              f"[log] pass --out PATH to choose, or --force to overwrite.",
+              flush=True)
+    return open(path, "w")
+
+
 def main():
     t0 = time.time()
     all_rules = enumerate_rules()
     print(f"[stage1] {len(all_rules)} candidate rules", flush=True)
-    log = open("maxsweep_log.jsonl", "w")
+    log = open_evidence_log("maxsweep_log.jsonl")
 
     survivors, colliders = [], []
     with ProcessPoolExecutor(max_workers=14) as ex:
@@ -192,6 +225,15 @@ def main():
                 if rec["genuine"]:
                     colliders.append((tuple(rec["rule"]), rec))
         log.flush()
+        # as_completed() yields in completion order, which varies run to run
+        # with scheduling. Everything below slices these two lists -- stage 2
+        # takes survivors[:60] and stage 3 takes the first 40 targets -- so
+        # without a total order the two stages sweep a different subset each
+        # run and the published counts ("1,041 of 1,770 two-rule systems
+        # collide", "87 of 226 systems show R2 merges") are not reproducible.
+        # Stage 1 itself is order-independent and always did reproduce.
+        survivors.sort()
+        colliders.sort(key=lambda rc: rc[0])
         print(f"[stage1] done: {len(survivors)} survivors, "
               f"{len(colliders)} colliding, {time.time()-t0:.0f}s", flush=True)
 

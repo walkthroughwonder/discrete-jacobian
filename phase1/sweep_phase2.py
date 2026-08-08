@@ -11,6 +11,8 @@ Scope of this sweep (documented, per no-silent-caps):
   - probe/search space: states with <=4 vertices, <=3 edges
 Claims are 'in range' only.
 """
+import sys
+import os
 import json
 from itertools import product
 
@@ -83,12 +85,32 @@ def classify_pairs(genuine, rules):
     return out
 
 
+def open_evidence_log(default_path):
+    """Open a log for writing without ever silently destroying evidence.
+
+    This path is committed evidence and the README tells the reader to run
+    this script, which used to open it with "w". --out PATH writes where you
+    say; otherwise an existing default sends this run to a .rerun sibling.
+    --force is the only way to overwrite.
+    """
+    argv = sys.argv
+    path = argv[argv.index("--out") + 1] if "--out" in argv else default_path
+    if os.path.exists(path) and "--force" not in argv:
+        if "--out" in argv:
+            sys.exit(f"refusing to overwrite {path} (pass --force if you mean it)")
+        stem, ext = os.path.splitext(default_path)
+        path = f"{stem}.rerun{ext}"
+        print(f"[log] {default_path} exists and is committed evidence; "
+              f"writing this run to {path} instead.", flush=True)
+    return open(path, "w")
+
+
 def main():
     probes = enumerate_states(4, 3)
     all_rules = enumerate_rules()
     print(f"enumerated {len(all_rules)} candidate rules; probing D1...")
 
-    log = open("sweep_log.jsonl", "w")
+    log = open_evidence_log("sweep_log.jsonl")
     stats = {"rules": len(all_rules), "syntactic_d1": 0, "semantic_d1": 0,
              "identity_skipped": 0, "colliding": 0, "independent_pairs": 0}
     finds = []
