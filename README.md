@@ -71,8 +71,8 @@ SHA-256 from `discrete-jacobian-research`
 (`scripts/audit_finite_prefix_obstruction.py`), so overwriting it breaks an
 audit in the other repository.
 
-The Lean proof compiles with any Mathlib-provisioned toolchain:
-`lake env lean lean/SpliceCollision.lean`.
+The Lean proof builds against the pinned environment in lean/ (Lean 4 v4.33.0-rc2, Mathlib 3dd956ad — committed lake-manifest.json):
+`cd lean && lake exe cache get && lake build`.
 
 ## License
 
