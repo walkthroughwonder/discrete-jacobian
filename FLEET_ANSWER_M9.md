@@ -54,8 +54,11 @@ d. **Holdout anatomy** — the 55 ambiguous-but-rigid rules decompose
 No sweep beyond the 489 since 07-27. No new R2 work — but the note's
 "observed, not certified end-to-end" phrasing about multiway merges is
 stale: `phase1/cert_deep_r2.json` is a certified two-step-per-branch R2
-merge (unsplice rule, nine independent checks, 2026-07-27). Cite it if
-a referee pokes.
+merge. Cite it if a referee pokes. [CR11 correction 2026-08-11: the
+07-27 unsplice-rule cert referenced here was refuted (reducible to a
+one-step merge) and replaced by a genuine deep merge under
+{(a,b)} → {(a,a),(b,a)}, eleven independent checks including
+earliest-intersection deepness.]
 
 ## 4. Garden of Eden (Q4)
 

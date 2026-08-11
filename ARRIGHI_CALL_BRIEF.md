@@ -70,8 +70,11 @@ question (Q5).
 ## Likely questions, ready answers
 
 - *"Multi-step / multiway merging — certified or anecdotal?"* →
-  `phase1/cert_deep_r2.json`: two-step-per-branch R2 merge (unsplice
-  rule), nine independent checks. Certified end-to-end.
+  `phase1/cert_deep_r2.json`: two-step-per-branch R2 merge, certified
+  end-to-end with explicit deepness checks. [CR11 correction 2026-08-11:
+  the original unsplice-rule cert cited here was refuted (its futures met
+  after one step) and replaced by a genuine deep merge under
+  {(a,b)} → {(a,a),(b,a)}, eleven independent checks.]
 - *"Is your D1 too weak? A rule that 'moves' content isn't locally
   invertible."* → That boundary is the result: semantic D1 is
   result-side uniqueness at the comatch; the D3-strict sweep shows the

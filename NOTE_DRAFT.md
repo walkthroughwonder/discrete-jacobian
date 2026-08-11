@@ -127,10 +127,16 @@ Numbers (all tier-stamped, "in range" only):
   Its unambiguity has a structural explanation: its RHS symmetry (a ↔ b)
   acts trivially on the predecessor, so distinct reverse-readings agree.
 - R2 (multiway): 87/226 systems show merges of mutually-unreachable seeds;
-  of 123 examples, 55 reduce to one-step collisions, 68 are genuinely
-  multi-step. One deep merge is certified and independently replayed
-  (cert_deep_r2.json: the "unsplice" rule {(a,b),(b,c)} → {(a,a),(c,b)},
-  two seeds two steps each to a common witness; nine-check verification).
+  of 123 examples, 100 share a one-step successor and 23 have no one-step
+  meeting point (deep-merge candidates). [Corrected 2026-08-11: an earlier
+  draft said 55/68 from a min-policy-image comparison, which inflated the
+  deep count; the sound test is one-step successor-set intersection.] One
+  deep merge is certified and independently replayed (cert_deep_r2.json,
+  re-issued 2026-08-11: the rule {(a,b)} → {(a,a),(b,a)}, two seeds two
+  steps each to a common witness, exact one-step successor sets disjoint;
+  eleven-check verification including earliest-intersection deepness. The
+  first exemplar, the "unsplice" rule of 2026-07-27, was withdrawn after
+  an audit showed its futures met after one step.)
 
 ## 5. The Rigidity Theorem
 
@@ -189,7 +195,9 @@ this type exists for rewriting that modifies its own underlying geometry.
 Definition-relative (A1); bounded sweeps with tier-stamped claims only
 (A5); isomorphism-level semantics with the named-graph nuance (A2);
 elementary mechanism, calibrated claims (A4); multi-step (R2) monodromy
-observed but not yet certified end-to-end.
+certified end-to-end for a single exemplar only (cert_deep_r2.json,
+re-issued 2026-08-11 after an audit refuted the first exemplar), with
+the 23 remaining deep-merge candidates unaudited at that depth.
 
 ## Reproducibility
 

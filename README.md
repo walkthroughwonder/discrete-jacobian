@@ -50,7 +50,10 @@ draft. AI assistance (Claude, Anthropic) throughout, disclosed.
 - History ambiguity is necessary for collision in every tier tested
   (zero exceptions); exactly one rule is unambiguous at (4,4) — and rigid.
 - 13 R1 certificates + 1 deep R2 (multiway) certificate, all confirmed by
-  an independently-implemented verifier.
+  an independently-implemented verifier. (The deep R2 certificate was
+  re-issued 2026-08-11: a CR11 audit found the original reducible to a
+  one-step merge; the replacement is verified with explicit
+  earliest-intersection deepness checks.)
 
 ## Reproduce
 

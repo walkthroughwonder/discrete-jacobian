@@ -109,7 +109,9 @@ canonical form) and prove the inversion map well-defined.
    policy, tier, and independence bounds. **All 13 CONFIRMED by the
    independent verifier**, including its own both-direction
    unreachability check. Legacy regressions (cert_flagship,
-   cert_deep_r2, test_sanity) still pass.
+   cert_deep_r2, test_sanity) still pass. [CR11 note 2026-08-11:
+   cert_deep_r2.json was re-issued after an audit refuted the 07-27
+   original; the regression passes against the regenerated certificate.]
 3. OPEN: stress the two-rule hard core at (6,5)/(5,6) under both
    policies; attempt the pendant coherence proof.
 4. All claims tier-stamped; nothing here exceeds its stated census.

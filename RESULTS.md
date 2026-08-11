@@ -124,12 +124,22 @@ Structural notes:
   derives local structure — our converse. Garden-of-Eden for dynamic
   topology confirmed unclaimed in both. Residual: skim CGD journal PDF
   definitions before submission.
-- ~~N4~~ DONE: of 123 R2 merge examples, 55 reduce to one-step R1
-  collisions, but **68 are genuinely deeper multi-step merges**. One deep
-  merge certified end-to-end (2026-07-27): the "unsplice" rule
-  {(a,b),(b,c)} → {(a,a),(c,b)}, two mutually-unreachable seeds reaching a
-  common witness in 2 steps each; independently replayed, nine checks,
-  CONFIRMED (cert_deep_r2.json).
+- ~~N4~~ DONE — **CORRECTED 2026-08-11 (CR11 audit)**: of 123 R2 merge
+  examples, **100 share a one-step successor** (multiway merge at depth 1)
+  and only **23 have no one-step meeting point** (deep-merge candidates).
+  The originally published 55/68 split compared min-policy images only
+  (f_min equality), which inflates "genuinely deeper": differing min-images
+  do not rule out a shared one-step successor. The sound test is
+  successor-set intersection (analysis_n4n5.py, fixed and rerun).
+  The first deep-merge exemplar (2026-07-27, the "unsplice" rule) was
+  itself refuted by the audit — its two certificate paths passed through
+  the SAME depth-1 state, a one-step R1 collision certified as deep, and
+  the old nine-check replay never tested earliest intersection. It is
+  withdrawn and replaced: cert_deep_r2.json now certifies the rule
+  {(a,b)} → {(a,a),(b,a)}, two mutually-unreachable seeds reaching a
+  common witness in 2 steps each with exact one-step successor sets
+  disjoint; independently replayed, eleven checks (two new deepness
+  checks included), CONFIRMED.
 - Conjecture stress (2026-07-27): tiers (5,3) and (4,4) — ZERO violations
   of the weak form. At (4,4) collisions explode 52 → 182/238 and exactly
   one rule stays unambiguous ({(a,a),(b,b)} → {(a,b),(b,a)}, rigid; its RHS
