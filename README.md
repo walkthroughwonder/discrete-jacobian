@@ -22,7 +22,10 @@ Edge- and vertex-count preserving, every application uniquely undoable at
 its comatch, unique successor up to isomorphism (no policy involved) — and
 the two non-isomorphic, mutually-unreachable states evolve to the same
 state. The image forgets which vertex carried the loop: **the forgotten
-match is the discrete monodromy.**
+match is the discrete monodromy.** (Unreachability, precisely: the JSON
+certificate encodes only the bounded BFS recheck — 5000 states / 8
+vertices; the unconditional claim is the terminality hand argument in
+PROOF_flagship.md, with terminality machine-checked in Lean.)
 
 ## Status
 
