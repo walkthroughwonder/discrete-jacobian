@@ -91,6 +91,12 @@ Structural notes:
   on 2026-07-26. After the fix: 12/12 CONFIRMED, planted regression intact.
   Lesson recorded: a passing round-trip test can pass by coincidence; the
   verifier needs self-tests too.
+- Certificate inventory (CR11 audit, 2026-08-11): cert_flagship.json is
+  the harvest output cert_9.json promoted verbatim (byte-identical), so
+  the flagship was never a separate certificate. The redundant cert_9.json
+  file was removed; the on-disk cert_*.json inventory (14 files) now
+  matches the stated count of 14 distinct certificates = 13 R1 + 1 deep
+  R2. (A harvest.py rerun recreates cert_9.json.)
 
 ## Caveats before any external claim
 

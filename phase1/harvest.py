@@ -51,6 +51,9 @@ def main():
         cert = certificate([rule], s, t, img)
         cert["reachability"] = {"s_to_t": False, "t_to_s": False,
                                "bounds": {"max_states": 5000, "max_verts": 8}}
+        # NOTE: cert_9.json from the committed batch was promoted verbatim
+        # to cert_flagship.json; the duplicate file was removed (CR11,
+        # 2026-08-11). A rerun of this script recreates cert_9.json.
         path = f"cert_{i}.json"
         json.dump(cert, open(path, "w"), indent=1)
         confirmed.append((path, tag, rule, s, t, img))
