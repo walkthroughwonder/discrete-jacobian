@@ -8,7 +8,7 @@ image can be 'read back' along a different history — the splice mechanism.
 """
 import json
 from core import (canonical, matches, apply_rule, apply_rule_traced,
-                  reverse_rule, f_min)
+                  reverse_rule, successors)
 from search import enumerate_states
 
 
@@ -63,6 +63,15 @@ def main():
         print(f"  FP example: {r}")
 
     # ---- N4 ----
+    # CR11 fix (2026-08-11): the original predicate compared f_min images.
+    # That is sound in the "one-step" direction (equal min-images share a
+    # successor) but unsound in the "deeper" direction: differing min-images
+    # do NOT rule out a shared one-step successor elsewhere in the two
+    # successor sets, so "deeper" was inflated. The sound test is
+    # intersection of the full one-step canonical successor sets: nonempty
+    # means the multiway futures merge at depth 1 (under the successor
+    # relation itself, policy-free); empty means no one-step meeting point
+    # exists and the pair is a CANDIDATE for a genuinely deeper merge.
     one_step = deeper = 0
     for line in open('maxsweep_log.jsonl'):
         rec = json.loads(line)
@@ -73,14 +82,13 @@ def main():
         for ex in rec.get('examples', []):
             s = tuple(tuple(e) for e in ex['s'])
             t = tuple(tuple(e) for e in ex['t'])
-            i1, i2 = f_min(s, rules_), f_min(t, rules_)
-            if i1 is not None and i1 == i2:
+            if successors(s, rules_) & successors(t, rules_):
                 one_step += 1
             else:
                 deeper += 1
     print("\n=== N4: R2 merge examples ===")
-    print(f"explained by one-step R1 collision: {one_step}")
-    print(f"deeper (multi-step) merges: {deeper}")
+    print(f"share a one-step successor (merge at depth 1): {one_step}")
+    print(f"no one-step meeting point (deep-merge candidates): {deeper}")
 
 
 if __name__ == "__main__":
