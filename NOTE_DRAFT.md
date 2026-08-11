@@ -196,8 +196,10 @@ Definition-relative (A1); bounded sweeps with tier-stamped claims only
 (A5); isomorphism-level semantics with the named-graph nuance (A2);
 elementary mechanism, calibrated claims (A4); multi-step (R2) monodromy
 certified end-to-end for a single exemplar only (cert_deep_r2.json,
-re-issued 2026-08-11 after an audit refuted the first exemplar), with
-the 23 remaining deep-merge candidates unaudited at that depth.
+re-issued 2026-08-11 after an audit refuted the first exemplar; the
+certified pair comes from fresh seed enumeration under a logged rule,
+not from the logged examples), with all 23 logged deep-merge
+candidates unaudited at that depth.
 
 ## Reproducibility
 

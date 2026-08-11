@@ -120,9 +120,9 @@ def bounded_unreachable(src, dst_canon, rules, max_states, max_verts):
 def verify_r2(cert):
     """Independently replay an R2-deep-merge path certificate: every step of
     both paths must be a legal one-step image, endpoints must meet at the
-    witness, and the seeds must be canonically distinct. (Reachability
-    separation of the seeds is NOT checked here — it is bounds-relative and
-    documented inside the certificate.)
+    witness, and the seeds must be canonically distinct. Mutual
+    unreachability of the seeds is rechecked at the certificate's own
+    recorded bounds (bounds-relative, like the R1 path's check).
 
     CR11 (2026-08-11): DEEPNESS itself is now checked, not just path
     legality. The retracted first cert_deep_r2.json had legal >=2-step
@@ -172,6 +172,13 @@ def verify_r2(cert):
             break
     checks.append((f"multiway futures disjoint at every depth < {claimed}",
                    not meet_below))
+    rb = cert["reachability_bounds"]
+    ms, mv = rb["max_states"], rb["max_verts"]
+    c1, c2 = canon(p1[0]), canon(p2[0])
+    checks.append((f"seed2 unreachable from seed1 (bounds {ms},{mv})",
+                   bounded_unreachable(p1[0], c2, rules, ms, mv)))
+    checks.append((f"seed1 unreachable from seed2 (bounds {ms},{mv})",
+                   bounded_unreachable(p2[0], c1, rules, ms, mv)))
     ok = all(passed for _, passed in checks)
     for name, passed in checks:
         print(f"  [{'PASS' if passed else 'FAIL'}] {name}")

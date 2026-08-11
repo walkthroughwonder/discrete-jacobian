@@ -21,7 +21,7 @@ committed and pushed; the working tree is clean; `main` and
 | Claim | Trust level |
 |---|---|
 | Splice collision (non-iso states, unique successor up to iso, terminality) | **Lean 4, zero sorries** (`lean/SpliceCollision.lean`, compiles against Mathlib) |
-| 14 certificates (13 R1 + 1 deep two-step R2, the "unsplice" rule) | Independently-implemented verifier, CONFIRMED |
+| 14 certificates (13 R1 + 1 deep two-step R2 — regenerated 2026-08-11 after the original "unsplice" cert was refuted as reducible to one step) | Independently-implemented verifier, CONFIRMED |
 | Sweep statistics (489 → 238 semantic-D1; 52 colliders at ≤4v/≤3e; 182 at (4,4)) | Machine-swept, tier-stamped, "in range" claims only |
 | Ambiguity necessary for collision (52/52; all 56 unambiguous rules rigid) | Empirical at swept tiers — now *explained* by the theorem |
 | **Rigidity Theorem** (semantic D1 + history-unambiguous ⟹ one-step evolution injective up to iso, policy-free) | Hand proof, `PROOF_rigidity.md` — **pending scrutiny**: no second reader yet, no Lean. Say "theorem with proof, pending scrutiny" externally. |
