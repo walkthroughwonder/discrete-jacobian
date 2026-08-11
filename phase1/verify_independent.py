@@ -122,7 +122,16 @@ def verify_r2(cert):
     both paths must be a legal one-step image, endpoints must meet at the
     witness, and the seeds must be canonically distinct. (Reachability
     separation of the seeds is NOT checked here — it is bounds-relative and
-    documented inside the certificate.)"""
+    documented inside the certificate.)
+
+    CR11 (2026-08-11): DEEPNESS itself is now checked, not just path
+    legality. The retracted first cert_deep_r2.json had legal >=2-step
+    paths to the witness while the two futures already met after one step
+    (both paths shared their depth-1 state); the original nine checks were
+    guaranteed to pass on it. Two checks added: the paths must share no
+    state before the witness, and a fresh BFS from each seed must show the
+    multiway futures disjoint at every depth below the claimed earliest
+    intersection."""
     rules = [(tuple(tuple(e) for e in lhs), tuple(tuple(e) for e in rhs))
              for lhs, rhs in cert["rules"]]
     p1 = [[tuple(e) for e in st] for st in cert["path1"]]
@@ -141,6 +150,28 @@ def verify_r2(cert):
     w = canon([tuple(e) for e in cert["witness"]])
     checks.append(("path1 ends at witness", canon(p1[-1]) == w))
     checks.append(("path2 ends at witness", canon(p2[-1]) == w))
+    pre1 = {canon(st) for st in p1[:-1]}
+    pre2 = {canon(st) for st in p2[:-1]}
+    checks.append(("paths share no state before the witness",
+                   not (pre1 & pre2)))
+    claimed = max(len(p1), len(p2)) - 1  # depth of the claimed first meet
+    future1, future2 = {canon(p1[0])}, {canon(p2[0])}
+    frontier1, frontier2 = [p1[0]], [p2[0]]
+    meet_below = False
+    for _ in range(1, claimed):
+        frontier1 = [decode(c) for c in
+                     {img for st in frontier1
+                      for img in one_step_images(st, rules)} - future1]
+        frontier2 = [decode(c) for c in
+                     {img for st in frontier2
+                      for img in one_step_images(st, rules)} - future2]
+        future1.update(canon(st) for st in frontier1)
+        future2.update(canon(st) for st in frontier2)
+        if future1 & future2:
+            meet_below = True
+            break
+    checks.append((f"multiway futures disjoint at every depth < {claimed}",
+                   not meet_below))
     ok = all(passed for _, passed in checks)
     for name, passed in checks:
         print(f"  [{'PASS' if passed else 'FAIL'}] {name}")
