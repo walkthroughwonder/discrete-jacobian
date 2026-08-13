@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this research software, cite the all-versions Zenodo record; use the v1.1.0 version DOI once issued."
+title: "The Discrete Jacobian Program: A Lean-Checked Splice Collision and a Rigidity Theorem for Graph Rewriting"
+type: software
+authors:
+  - given-names: Edwin
+    family-names: Rosero
+version: 1.1.0
+date-released: 2026-08-12
+abstract: >-
+  Research software and explicit certificates showing that own-comatch
+  undoability, together with a bounded semantic-D1 screen, can coexist with
+  a global collision on graph-isomorphism classes. The release includes executable search
+  code, independently replayed certificates, bounded exhaustive sweeps, hand
+  proofs, and a Lean 4/Mathlib formalization of the concrete flagship
+  collision. Within the declared census, 489 rules were enumerated, 238
+  passed the bounded semantic-D1 screen, and 52 collided within
+  four vertices and three edges, increasing to 182 within four edges. These
+  figures are bounded evidence. Version 1.1.0 adds an elementary hand proof
+  that exact semantic D1 together with exact history unambiguity
+  implies injectivity of one-step evolution on isomorphism classes. The
+  general rigidity proof is not yet formalized in Lean or externally peer
+  reviewed, and its converse remains open. “Discrete Jacobian” is an
+  analogy; no result about the classical polynomial Jacobian conjecture is
+  claimed.
+keywords:
+  - graph rewriting
+  - directed multigraphs
+  - discrete dynamics
+  - application-level undoability
+  - global injectivity
+  - discrete Jacobian
+  - history ambiguity
+  - Lean 4
+  - Wolfram model
+  - exhaustive search
+  - multiway systems
+license: MIT
+repository-code: "https://github.com/walkthroughwonder/discrete-jacobian"
+doi: "10.5281/zenodo.21630926"
+url: "https://doi.org/10.5281/zenodo.21630926"

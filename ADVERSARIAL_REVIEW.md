@@ -10,7 +10,9 @@ Defense: semantic D1 is about what (result + comatch) determines, not about
 edge counts. The delete rule {(x,y)} → {} destroys the identities x, y; the
 splice keeps every matched vertex present and identified (vars(L) = vars(R))
 and its reverse at the comatch is unique. The distinction is principled:
-delete fails syntactic D1, chain-step fails semantic D1, splice passes both.
+delete fails syntactic D1, chain-step has bounded semantic-D1 failures, and
+splice passes the declared finite semantic-D1 probe. Global semantic D1 for
+splice has not been proved.
 **Residue:** D1 is *our* definition. The note must present it as a
 definition with motivation, not as the platonic notion of local
 invertibility — and must state plainly that under Arrighi-style
@@ -54,10 +56,12 @@ not "a deep theorem."
 
 ## A5. "Bounded sweeps prove nothing about rigidity."
 
-Defense: rigidity claims are always stated "in range"; the conjecture's
-evidence base is reported with exact tiers ((4,3), (5,3) zero violations;
-(4,4) pending at this writing); the counterexample side needs no bounds
-(Lean, unconditional terminality). **Residue:** every rigidity number in
+Defense: empirical rigidity labels are always stated "in range"; the
+general theorem is exact under its stated hypotheses but its current hand
+proof remains pending external or generic Lean review. The converse's
+evidence base is reported with exact tiers ((4,3), (5,3), (4,4), and the
+(5,4) holdout check). The concrete collision is Lean-checked; unconditional
+mutual unreachability is a hand terminality argument. **Residue:** every rigidity number in
 the note carries its tier; no asymptotic language anywhere.
 
 ## A6. "Your two 'independent' implementations shared a bug once; why

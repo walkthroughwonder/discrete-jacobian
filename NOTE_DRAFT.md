@@ -1,32 +1,36 @@
-# Locally invertible graph rewriting need not be globally injective:
-# explicit certificates, a machine-checked splice collision, and a rigidity conjecture
+# Application-level undoability need not prevent global state collisions:
+# explicit certificates, a machine-checked splice collision, and a human rigidity theorem
 
-*Draft v1, 2026-07-27. Author: Edwin Rosero (walkthroughwonder), with
-AI assistance (Claude, Anthropic) disclosed throughout. Status: public
-working draft — not peer reviewed; comments and corrections welcome via
-repository issues.*
+*Draft v1.1, revised 2026-08-12. Author: Edwin Rosero
+(walkthroughwonder), with AI assistance from Anthropic Claude and OpenAI
+Codex disclosed. Status: public working draft — not peer reviewed;
+comments and corrections welcome via repository issues.*
 
 ## Abstract
 
 A polynomial map with everywhere-invertible differential can fail to be
 globally injective: the July 2026 counterexample to the Jacobian conjecture
 realizes this with a generically 3-to-1 map ℂ³ → ℂ³. We study the discrete
-analogue for hypergraph rewriting. We define a semantic notion of local
-invertibility for double-pushout-style rewrite rules (every application is
-uniquely undoable from its result and comatch region) and exhibit explicit,
-minimal certificates that it does not imply injectivity of the induced
-evolution on isomorphism classes — even for rules preserving both edge and
-vertex counts, and even when every state involved has a unique successor up
-to isomorphism, so that no updating-policy choice is involved. The flagship
+analogue for hypergraph rewriting. We define semantic D1 as the global
+condition that every application is uniquely undoable from its result and
+comatch region. The implementation tests it only over a declared finite
+probe of states with at most 4 vertices and 3 edges. The splice rule passes
+that probe and produces an explicit policy-independent collision on
+isomorphism classes. The flagship
 "splice" collision (one rule, two 3-edge states) is formalized in Lean 4
-and checked against Mathlib with no unproven obligations. An exhaustive
+and checked against a pinned Mathlib revision with no `sorry`s. This Lean
+file proves the concrete collision, source non-isomorphism, successor-class
+agreement, and terminality for S1 successors; it does not formalize the
+symmetric terminality fact, mutual unreachability, or semantic D1. An
+exhaustive
 sweep of 489 small rules identifies *history ambiguity* — the existence of
 a reverse-match at a support other than the comatch yielding a different
 predecessor — as necessary for collision, first empirically (zero
-exceptions across all tiers) and then by an elementary theorem: a
+exceptions across all tiers) and then by a human-readable elementary theorem: a
 semantically locally-invertible, history-unambiguous rule has one-step
 evolution injective on isomorphism classes. The converse (a dichotomy)
-remains open. We position
+remains open. The general theorem is pending external review or generic
+Lean formalization. We position
 the results as sharpness witnesses for the sufficient reversibility
 conditions of Arrighi, Costes and Maignan, and state the Moore–Myhill
 question for dynamic topology, which appears to be open.
@@ -34,7 +38,8 @@ question for dynamic topology, which appears to be open.
 ## 1. Introduction
 
 [Motivation: Jacobian counterexample (Alpöge 2026); the mechanism is a
-branched cover — local invertibility everywhere, global branch collision.
+nonproper, generically three-to-one étale map — local invertibility
+everywhere, global sheet collision.
 Question: does the analogous local-to-global inference hold for graph
 rewriting? For cellular automata on fixed geometry, partitioned/block
 constructions show locally-permutation structure forces global bijectivity;
@@ -46,17 +51,16 @@ value is in locating the boundary precisely):
 - **C1.** A definitional framework separating three grades of local
   invertibility (syntactic D1, semantic D1, context-preservation), with
   witnesses that each gate does real work.
-- **C2.** Minimal explicit counterexamples: semantically locally-invertible,
-  census-preserving rules whose evolution on isomorphism classes merges
-  non-isomorphic, mutually-unreachable states. The flagship is
-  machine-checked in Lean 4 / Mathlib (zero sorries), including
-  policy-independence and unconditional unreachability via terminality.
-- **C3.** Exhaustive small-scale empirics (489 rules; 238 semantic-D1
-  survivors) with a two-implementation verification pipeline, identifying
-  history ambiguity as empirically necessary for collision.
-- **C4.** The Rigidity Conjecture (unambiguous ⟹ injective) and the
-  dynamic-topology Garden-of-Eden question, with positioning against the
-  causal-graph-dynamics and space-time-reversible-rewriting literature.
+- **C2.** Minimal explicit census-preserving collision examples whose
+  rules pass the declared bounded semantic-D1 probe. Lean checks the
+  flagship's concrete collision and policy independence; unconditional
+  mutual unreachability is supplied by the hand proof.
+- **C3.** Exhaustive bounded empirics: 489 rules, of which 238 pass the
+  semantic-D1 probe over states with ≤4 vertices and ≤3 edges, with a
+  two-implementation verification pipeline.
+- **C4.** The Rigidity Theorem (unambiguous ⟹ injective), with an elementary
+  hand proof pending external or generic Lean review, and the
+  dynamic-topology Garden-of-Eden question.
 
 ## 2. Definitions
 
@@ -86,8 +90,9 @@ predecessor is not isomorphic to the source.
 
 ## 3. The splice collision (main example)
 
-Rule: {(a,a),(b,c)} → {(a,b),(c,a)}, a,b,c distinct. Edge- and
-vertex-preserving; semantic D1.
+Rule: {(a,a),(b,c)} → {(a,b),(c,a)}, a,b,c distinct. It preserves edge and
+matched-vertex counts and passes the declared bounded semantic-D1 probe;
+no unbounded semantic-D1 proof is currently claimed.
 
 States S₁ = {(0,0),(1,2),(1,3)}, S₂ = {(0,0),(1,2),(3,2)}.
 
@@ -99,7 +104,10 @@ classes is therefore well-defined at S₁, S₂ and not injective.
 [Proof: PROOF_flagship.md, three steps, no computation needed. Lean 4
 formalization: SpliceCollision.lean — theorems splice_collision,
 S1_not_iso_S2, succ_S1_iso_P4, succ_S2_iso_P4, succ_S1_terminal; compiles
-against Mathlib with zero sorries.]
+against the pinned Mathlib revision with zero `sorry`s. The symmetric
+terminality fact and mutual unreachability have a short hand proof.
+Semantic D1 is a separate bounded sweep claim, not a theorem in this Lean
+file.]
 
 Mechanism: the P₄ image does not remember which interior vertex was the
 spliced loop. The forgotten comatch is the discrete monodromy — the exact
@@ -115,7 +123,8 @@ the disagreement between implementations is what surfaced it; verifier
 self-tests added; full pipeline and logs published for third-party re-run.]
 
 Numbers (all tier-stamped, "in range" only):
-- 489 rules → 238 semantic-D1 non-identity survivors.
+- 489 rules → 238 non-identity survivors of the semantic-D1 probe on all
+  enumerated states with ≤4 vertices and ≤3 edges.
 - Tier (≤4v, ≤3e): 52 rules collide (77 INDEPENDENT pairs; 32 from
   edge-count-preserving rules; 12 rules fully census-preserving AND
   policy-independent). 13 certificates machine-verified.
@@ -123,22 +132,26 @@ Numbers (all tier-stamped, "in range" only):
 - Tier (≤4v, ≤4e): collisions explode to 182/238 with one extra edge of
   probe room; still zero unambiguous colliders. Only one rule remains
   history-unambiguous at this tier — {(a,a),(b,b)} → {(a,b),(b,a)}, "fuse
-  two loops into a 2-cycle" — and it is rigid, as the conjecture requires.
+  two loops into a 2-cycle" — and it is collision-free in that tier,
+  consistent with the theorem but not an unbounded verification of its
+  hypotheses.
   Its unambiguity has a structural explanation: its RHS symmetry (a ↔ b)
   acts trivially on the predecessor, so distinct reverse-readings agree.
-- R2 (multiway): 87/226 systems show merges of mutually-unreachable seeds;
-  of 123 examples, 55 reduce to one-step collisions, 68 are genuinely
-  multi-step. One deep merge is certified and independently replayed
-  (cert_deep_r2.json: the "unsplice" rule {(a,b),(b,c)} → {(a,a),(c,b)},
-  two seeds two steps each to a common witness; nine-check verification).
+- R2 (multiway): 87/226 systems show bounded merges of seeds classified as
+  mutually unreachable within the search bounds. Of 123 logged examples,
+  55 were detected by the original one-step policy-image test and 68 were
+  not. The historical artifact `cert_deep_r2.json` independently replays
+  two legal two-step paths to a common witness, but does not establish
+  minimum merge depth: its seeds also share a one-step successor.
 
-## 5. The Rigidity Theorem
+## 5. The Rigidity Theorem — human proof, not yet Lean-formalized
 
 Empirics: history ambiguity is necessary for collision in every tier tested
 (zero false negatives across 238 rules × 4 tiers); it is not sufficient
 (ambiguous-but-rigid rules persist through tier (5,4)).
 
-**Theorem (Rigidity).** A semantically locally-invertible rule with no
+**Theorem (Rigidity, hand proof pending scrutiny).** A semantically
+locally-invertible rule with no
 history ambiguity has injective one-step evolution on isomorphism classes —
 under every updating policy, including the successor relation itself.
 
@@ -162,11 +175,9 @@ whose predecessor is not merely non-isomorphic but unreachable-independent
 of the original. We leave the refinement as the immediate next step.
 
 [Discussion: Garden-of-Eden-shaped — a local combinatorial condition
-governing a global injectivity property. The weak form's proof should show
-unambiguity forces every collision to factor through an isomorphism of
-sources (the loops-to-2-cycle rule illustrates the mechanism: RHS symmetry
-acting trivially on histories). A refutation needs an explicit
-certificate.]
+governing a global injectivity property. The proof shows that unambiguity
+forces every one-step collision to factor through an isomorphism of
+sources. A generic Lean formalization remains future work.]
 
 ## 6. Positioning and the open question
 
@@ -188,11 +199,12 @@ this type exists for rewriting that modifies its own underlying geometry.
 
 Definition-relative (A1); bounded sweeps with tier-stamped claims only
 (A5); isomorphism-level semantics with the named-graph nuance (A2);
-elementary mechanism, calibrated claims (A4); multi-step (R2) monodromy
-observed but not yet certified end-to-end.
+elementary mechanism, calibrated claims (A4); R2 paths certified but
+minimum-depth claims not established; general rigidity proof not yet
+formalized or externally reviewed.
 
 ## Reproducibility
 
-[Repo: code (searcher, independent verifier with self-tests), 13 + 1
-certificates, sweep logs for every tier, Lean proof, and this document's
+[Repo: code (searcher, independent verifier with self-tests), 13 distinct
+R1 certificates plus one R2 path artifact, sweep logs for every tier, Lean proof, and this document's
 full provenance. All experiments single-machine, minutes-scale.]

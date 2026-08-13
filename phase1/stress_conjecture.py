@@ -1,11 +1,12 @@
-"""Rigidity Conjecture stress test at a larger probe tier.
+"""Bounded consistency stress test for rigidity labels at a larger tier.
 
 Usage: python stress_conjecture.py MAX_V MAX_E WORKERS OUTFILE
 
-For every stage-1 survivor rule: recompute history ambiguity and R1
-collisions at the (MAX_V, MAX_E) tier. The conjecture dies if any rule is
-UNAMBIGUOUS (at this tier) yet COLLIDES (at this tier). Incremental JSONL
-output so partial runs are usable.
+For every stage-1 survivor rule, recompute bounded history-ambiguity and R1
+collision labels at the (MAX_V, MAX_E) tier. A bounded label conflict flags
+the probe or implementation for investigation; it does not by itself refute
+the exact theorem, whose hypotheses are unbounded. Incremental JSONL output
+keeps partial runs usable. The legacy JSON key is retained for compatibility.
 """
 import json
 import sys
@@ -61,14 +62,14 @@ def main():
             log.flush()
             if rec.get("CONJECTURE_VIOLATION"):
                 violations += 1
-                print(f"!! VIOLATION: {rec['rule']}", flush=True)
+                print(f"!! BOUNDED LABEL CONFLICT: {rec['rule']}", flush=True)
             if rec.get("genuine"):
                 new_colliders += 1
             if (i + 1) % 40 == 0:
                 print(f"[stress {MAX_V},{MAX_E}] {i+1}/{len(rules)} "
                       f"({time.time()-t0:.0f}s)", flush=True)
     print(f"[stress {MAX_V},{MAX_E}] DONE {time.time()-t0:.0f}s: "
-          f"colliding={new_colliders}, CONJECTURE VIOLATIONS={violations}",
+          f"colliding={new_colliders}, BOUNDED LABEL CONFLICTS={violations}",
           flush=True)
 
 

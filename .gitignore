@@ -1,3 +1,7 @@
-cgd_paper.txt
+/.lake/
+*.olean
+*.ilean
 __pycache__/
+.DS_Store
+cgd_paper.txt
 *.pyc

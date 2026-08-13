@@ -1,6 +1,11 @@
-"""Certify one genuinely multi-step R2 merge: two mutually-unreachable seeds
-whose multiway futures intersect only after >=2 steps. Emits a path
-certificate (explicit step sequences) for independent replay."""
+"""Certify an R2 convergence witness with explicit paths of at least two
+steps from each seed.
+
+This is a path certificate, not a shortest-path certificate: it does not
+exclude a shorter common successor. In the checked artifact the two seeds
+also share a one-step successor. The historical JSON kind is retained for
+backward compatibility with the independent verifier.
+"""
 import json
 from itertools import combinations
 
@@ -26,7 +31,7 @@ def bfs_paths(seed, rules, depth=3, cap=400, max_verts=6):
 
 
 def main():
-    # systems with known multi-step merges, from the maxsweep stage-3 log
+    # systems with logged R2 convergence examples from the stage-3 log
     for line in open("maxsweep_log.jsonl"):
         rec = json.loads(line)
         if rec.get("stage") != 3 or not rec.get("r2_merges"):
@@ -40,7 +45,7 @@ def main():
             for w in sorted(common):
                 ps, pt = fwd[s][w], fwd[t][w]
                 if len(ps) < 3 or len(pt) < 3:
-                    continue  # want >=2 steps on both sides: genuinely deep
+                    continue  # require an explicit >=2-step path on both sides
                 if reachable(s, t, rules, max_states=800, max_verts=7) or \
                    reachable(t, s, rules, max_states=800, max_verts=7):
                     continue
@@ -56,13 +61,13 @@ def main():
                     "reachability_bounds": {"max_states": 800, "max_verts": 7},
                 }
                 json.dump(cert, open("cert_deep_r2.json", "w"), indent=1)
-                print("deep R2 merge certified:")
+                print("R2 two-step path certificate written:")
                 print("  rules:", rules)
                 print("  seed1:", s, f"({len(ps)-1} steps)")
                 print("  seed2:", t, f"({len(pt)-1} steps)")
                 print("  witness:", w)
                 return
-    print("no deep merge found under constraints")
+    print("no qualifying R2 path found under constraints")
 
 
 if __name__ == "__main__":

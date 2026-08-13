@@ -5,14 +5,14 @@ Rule R (injective matching, a b c distinct):
     {(a,a), (b,c)}  →  {(a,b), (c,a)}
 "Splice the loop at a into the edge b→c."
 
-We prove: the states
+We prove that the states
     S1 = {(0,0), (1,2), (1,3)}   (loop ⊔ out-star)
     S2 = {(0,0), (1,2), (3,2)}   (loop ⊔ in-star)
-are non-isomorphic, every R-successor of S1 is isomorphic to every
-R-successor of S2 (all four are the directed path P₄), and successors are
-terminal. Hence one-step R-evolution on isomorphism classes is well-defined
-and NOT injective: a census-preserving, locally invertible rewrite rule
-with a policy-independent global collision.
+are non-isomorphic, both admit an R-step, and every R-successor of S1 is
+isomorphic to every R-successor of S2 (all four are the directed path P₄).
+We additionally prove terminality for successors of S1. This file does not
+formalize semantic D1, terminality for successors of S2, mutual
+unreachability, or the generic Rigidity Theorem.
 
 Companion to PROOF_flagship.md and cert_flagship.json in the
 discrete-jacobian program.
@@ -147,8 +147,8 @@ theorem splice_collision :
      isoTo_trans (succ_S1_iso_P4 _ h₁) (isoTo_symm (succ_S2_iso_P4 _ h₂)),
    S1_not_iso_S2⟩
 
-/-- Successors are terminal: the rule needs a loop, successors have none.
-With `splice_collision`, this gives unconditional mutual unreachability. -/
+/-- Every successor of S1 is terminal. The analogous S2 result and mutual
+unreachability are proved by hand in PROOF_flagship.md, not below. -/
 theorem succ_S1_terminal (t u : St) (h : RStep S1 t) : ¬ RStep t u := by
   obtain ⟨a, b, c, hab, hac, hbc, hloop, hedge, ht⟩ := h
   simp only [S1, Finset.mem_insert, Finset.mem_singleton, Prod.mk.injEq] at hloop hedge

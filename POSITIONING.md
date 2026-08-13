@@ -14,11 +14,10 @@ overlapping**, in three precise ways:
    that is incompatible with self-loops. The splice rule
    {(a,a),(b,c)} → {(a,b),(c,a)} violates context-preservation (it re-threads
    external connectivity through a) and uses a loop. **Our collision
-   certificates are therefore sharpness witnesses for their assumptions:**
-   drop context-preservation, keep per-application undoability (semantic D1),
-   and global reversibility genuinely fails — not merely "is no longer
-   guaranteed." This upgrades our result from "a curiosity" to "the reason
-   their hypotheses are what they are."
+   example therefore probes the boundary of their assumptions:** drop
+   context-preservation while retaining own-comatch undoability, and global
+   reversibility can fail. The splice rule passes the declared bounded
+   semantic-D1 probe; no global semantic-D1 theorem is claimed.
 2. **No Garden-of-Eden theorem.** Their reversibility implies bijectivity
    within their class by construction; they prove no surjective ⟺
    pre-injective statement, and their open-questions list (simulation
@@ -50,13 +49,13 @@ open-problem statement. Residual obligation CLOSED.
 
 ## Consequence for the write-up
 
-The result can be framed as: *per-application invertibility (semantic D1)
-is strictly weaker than space-time reversibility; the gap is realized by
-explicit, Lean-verified, census-preserving counterexamples; and the
+The result can be framed as: *the declared bounded semantic-D1 probe is
+compatible with a concrete, Lean-checked census-preserving collision, while
+space-time reversibility requires stronger context conditions; and the
 Moore–Myhill question for dynamic topology is open.* Positioning sentence
 for the intro: "Arrighi et al. show how to design reversible graph
-rewriting; we show what breaks when their context-preservation hypothesis
-is removed, and that it must break — even for census-preserving rules."
+rewriting; the splice example shows that when context preservation is
+removed, reversibility can fail even for a census-preserving rule."
 
 Residual obligations: skim the CGD journal PDF §definitions before any
 submission; cite both lines generously.

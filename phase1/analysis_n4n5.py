@@ -63,7 +63,7 @@ def main():
         print(f"  FP example: {r}")
 
     # ---- N4 ----
-    one_step = deeper = 0
+    one_step_policy = not_one_step_policy = 0
     for line in open('maxsweep_log.jsonl'):
         rec = json.loads(line)
         if rec.get('stage') != 3 or not rec.get('r2_merges'):
@@ -75,12 +75,13 @@ def main():
             t = tuple(tuple(e) for e in ex['t'])
             i1, i2 = f_min(s, rules_), f_min(t, rules_)
             if i1 is not None and i1 == i2:
-                one_step += 1
+                one_step_policy += 1
             else:
-                deeper += 1
+                not_one_step_policy += 1
     print("\n=== N4: R2 merge examples ===")
-    print(f"explained by one-step R1 collision: {one_step}")
-    print(f"deeper (multi-step) merges: {deeper}")
+    print(f"same one-step min-policy image: {one_step_policy}")
+    print("different one-step min-policy images "
+          f"(not a minimum-depth proof): {not_one_step_policy}")
 
 
 if __name__ == "__main__":

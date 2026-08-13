@@ -1,7 +1,8 @@
-# A locally invertible Wolfram model rule that merges branches: the "discrete Jacobian" collision
+# An own-comatch-undoable Wolfram model rule that merges branches: the "discrete Jacobian" collision
 
-*[Draft for community.wolfram.com — Edwin Rosero. AI assistance (Claude,
-Anthropic) disclosed. Post under Edwin's account only after his final read.]*
+*[Draft for community.wolfram.com — Edwin Rosero. AI assistance from
+Anthropic Claude and OpenAI Codex disclosed. Post under Edwin's account
+only after his final read.]*
 
 ---
 
@@ -19,9 +20,11 @@ It does — and the minimal example is small enough to run in two lines.
 
 "Splice the loop at `a` into the edge `b -> c`." Note what this rule does
 *not* do: it creates no vertices, deletes no vertices, and preserves the
-edge count. Every application is undoable: given the result and the two
-edges the application produced, the predecessor is uniquely determined.
-In that per-application sense the rule is locally invertible.
+edge count. Each displayed application is undoable when its own comatch is
+retained: given the result and the two edges that application produced, the
+predecessor is uniquely determined. The rule also passes the declared
+semantic-D1 probe over states with ≤4 vertices and ≤3 edges; no unbounded
+semantic-D1 claim is made.
 
 ## The collision
 
@@ -52,59 +55,61 @@ injective**: two genuinely different states evolve to one.
 Where did the information go? The path does not remember *which interior
 vertex used to carry the loop*. Locally, every application knows its own
 undo; globally, the state forgets which application happened. The
-forgotten match is the discrete analogue of the forgotten branch of the
-covering map in the ℂ³ counterexample — a discrete monodromy.
+forgotten match is the discrete analogue of a forgotten sheet of the
+nonproper étale map in the ℂ³ counterexample — a discrete monodromy.
 
-## What's proven, what's swept, what's conjectured
+## What's proven, what's swept, and what's open
 
-- **Machine-checked:** the collision above — non-isomorphism, successor
-  uniqueness up to isomorphism, and terminality (successors admit no
-  further application, so the two states are unconditionally mutually
-  unreachable) — is formalized in Lean 4 and compiles against Mathlib with
-  zero `sorry`s.
-- **Swept:** all 489 rules in three small signature classes; 238 pass a
-  semantic local-invertibility gate; 52 of them collide at states with ≤4
-  vertices and ≤3 edges, 182 at ≤4 edges. Every certificate is checked by
-  an independently implemented verifier. Multiway (branchial) merges with
-  distinct ancestry also occur, including certified merges that need two
-  steps on each branch — merging is not just one-step collision in
-  disguise.
-- **Conjectured:** collision seems to be governed by *history ambiguity* —
+- **Machine-checked:** source non-isomorphism, successor-class agreement,
+  the collision, and terminality for successors of S1 are formalized in
+  Lean 4 and compile against the pinned Mathlib revision with zero
+  `sorry`s. The symmetric terminality fact and unconditional mutual
+  unreachability have a short hand proof. Semantic local invertibility is
+  bounded sweep evidence, not a theorem in this Lean file.
+- **Bounded sweep:** all 489 rules in three small signature classes; 238
+  pass the semantic-D1 probe over states with ≤4 vertices and ≤3 edges; 52
+  of them collide in that tier, 182 at ≤4 edges. Every certificate is checked by
+  an independently implemented verifier. The R2 artifact independently
+  replays two legal two-step paths, but it does not prove minimum merge
+  depth; its seeds also share a one-step successor.
+- **Hand theorem, pending scrutiny:** collision is governed by *history ambiguity* —
   whether some image can be "read backwards" at a different location than
   the one that produced it, yielding a different predecessor. Across every
   rule and tier tested, ambiguity was necessary for collision with zero
-  exceptions. The rigidity conjecture (unambiguous ⟹ injective) and a
-  sharper dichotomy question are open.
+  exceptions. An elementary proof now shows that semantic D1 plus
+  history-unambiguity implies one-step injectivity. A generic Lean proof and
+  the sharper converse/dichotomy question remain open.
 
 ## Why I think this matters for multiway systems
 
 Branch merging is usually discussed here as a *feature* (confluence,
-causal invariance, quantum interpretations). This example isolates a
-different mechanism: merging of branches with **disjoint ancestries**,
-forced by rules that are individually information-preserving. In
+causal invariance, quantum interpretations). This example isolates merging
+of two non-isomorphic, mutually unreachable source states despite each
+application carrying its own comatch undo data. In
 Garden-of-Eden terms: for cellular automata on fixed geometry there is a
 century of theory linking local injectivity properties to global ones
 (Moore–Myhill, Gottschalk, Gromov); for rewriting that changes its own
 geometry, that theory appears not to exist yet. The nearest work
 (Arrighi et al. on reversible causal graph dynamics and space-time
 reversible rewriting) *designs* reversibility in via context-preservation
-conditions — the splice rule shows those conditions are exactly the load-
-bearing ones: drop them and reversibility must fail, even census-
-preservingly.
+conditions. The splice rule shows that removing context preservation can
+permit reversibility to fail, even census-preservingly; it does not show
+failure is necessary for every rule outside that class.
 
-Everything — code, 14 machine-verified certificates, sweep logs, the Lean
+Everything — code, 15 independently replayed certificate files (14 unique
+contents), sweep logs, the Lean
 proof, and a working-draft note — is public:
 
 - Repository: https://github.com/walkthroughwonder/discrete-jacobian
 - Archived + citable: https://doi.org/10.5281/zenodo.21630926
 
-I'd love help with: (1) the rigidity conjecture — a proof should show
-unambiguity forces collisions to factor through isomorphisms of sources;
-(2) richer-tier searches (the pipeline is a few hundred lines of Python);
-(3) visualizations of the branchial picture of the splice — the merge is
-begging for a good multiway graph rendering.
+I'd especially welcome an independent review or generic Lean formalization
+of the Rigidity Theorem, a corrected minimum-depth R2 certificate,
+richer-tier searches, and a branchial visualization of the splice
+collision.
 
-*Disclosure: this project was carried out in close collaboration with an
-AI assistant (Claude, Anthropic), including the searches, the Lean proof,
-and this post. All certificates are independently machine-verified, and
-the flagship is fully formalized — trust the proofs, not the process.*
+*Disclosure: this project was carried out with AI assistance from Anthropic
+Claude and OpenAI Codex, including searches, code, the concrete Lean proof,
+and this post. The certificates are independently replayed; the concrete
+Lean claims listed above are formalized, while the general rigidity theorem remains
+a hand proof pending scrutiny.*

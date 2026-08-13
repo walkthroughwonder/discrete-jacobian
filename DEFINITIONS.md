@@ -9,7 +9,8 @@ create vertices, variables absent on the right destroy them. DPO semantics
 
 The continuous object we are imitating: a polynomial map F : ℂ³ → ℂ³ with
 det DF = const ≠ 0 (locally invertible *everywhere*) that is generically
-3-to-1 (globally non-injective). The mechanism there is a branched cover:
+3-to-1 (globally non-injective). The mechanism there is a nonproper étale
+map with several generic sheets:
 locally you can always invert, but *which* inverse branch you are on is
 global data. The discrete slogan:
 
@@ -60,6 +61,17 @@ reversible" is nearly free in DPO and must not be confused with injectivity of
 the global step map. D1 is a statement about applications; the program's
 question is about states.
 
+## History ambiguity and unambiguity
+
+Fix an application `a : S → T` of a rule ρ with comatch support `c` in `T`.
+It is **history-ambiguous** if the reverse rule has a match in `T` supported
+on a region different from `c` whose resulting predecessor is not
+isomorphic to `S`. It is **history-unambiguous** if every such alternative
+reverse match yields a predecessor isomorphic to `S`. A rule has either
+property globally when the condition holds for every application. The
+implementation only approximates these global properties on explicitly
+declared finite probe spaces.
+
 ## D2 — Reversible-rule-set (system-level closure)
 
 A rule set 𝓡 is **D2-closed** if for every ρ ∈ 𝓡 the reverse rule ρ⁻¹
@@ -76,10 +88,11 @@ of local invariants (vertex count, edge count per arity, and any chosen local
 census) induced by one application. ρ is **D3-unimodular** if this action is
 invertible over ℤ (determinant ±1) — the discrete "det DF = const ≠ 0".
 
-D3 is strictly weaker than D1 (it forgets everything but counts) and strictly
-stronger than nothing: it rules out projections that destroy census
-information. Hypothesis worth testing in Phase 2: D1 ∧ D3 is the right
-hypothesis class for a rigidity theorem; D1 alone is not.
+D3 is strictly weaker than D1 (it forgets everything but counts) and
+strictly stronger than nothing: it rules out projections that destroy
+census information. D1 ∧ D3 was an experimental rigidity hypothesis. The
+current collision examples combine own-comatch undoability with bounded
+semantic-D1 screening; they do not settle exact global D1 ∧ D3 rigidity.
 
 ---
 

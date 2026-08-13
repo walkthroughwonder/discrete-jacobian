@@ -2,20 +2,18 @@
 
 ## Headline (internal claim, pre-external-review)
 
-**Fully census-preserving (edge- AND vertex-preserving), semantically
-locally-invertible rewrite rules exist whose one-step evolution is
-non-injective on isomorphism classes — with policy-independent collisions
-between unconditionally mutually-unreachable states.** The D3-strict
-rigidity hypothesis is FALSE: 18 of 105 fully census-preserving semantic-D1
-rules collide, 12 of those collisions are also policy-independent, and the
-phenomenon does not even require loops-to-fresh-vertices (loop-free pure
-rewiring examples exist, e.g. cert_d3strict.json).
+**Within the declared semantic-D1 probe over states with ≤4 vertices and
+≤3 edges, fully census-preserving non-identity rules exist whose one-step
+evolution is non-injective on isomorphism classes.** Eighteen of 105 fully
+census-preserving probe survivors collide, with 12 policy-independent
+examples. The concrete splice collision is unbounded by its hand proof,
+but global semantic D1 for the splice rule has not been proved.
 
 ## THE flagship (cert_flagship.json) — maximal strength on every axis
 
 Rule (**splice**): `{(a,a), (b,c)} → {(a,b), (c,a)}` — "splice the loop at
 a into the edge b→c, giving c→a→b." Census-preserving on both counts, no
-fresh vertices, semantic-D1.
+fresh vertices; it passes the declared bounded semantic-D1 probe.
 
     S1 = {(0,0), (1,2), (1,3)}   loop ⊔ out-star     ─┐
                                                       ├─→  P₄ (directed path)
@@ -28,8 +26,9 @@ mutual unreachability is UNCONDITIONAL (hand argument, no BFS bounds).
 Full proof: PROOF_flagship.md. Lean formalization: lean/SpliceCollision.lean
 (theorem `splice_collision` + `succ_S1_terminal`) — **compiles with zero
 sorries against Mathlib (verified 2026-07-26)**: the collision, the
-non-isomorphism, the successor-uniqueness-up-to-iso, and terminality are
-all machine-checked.
+non-isomorphism, successor-class agreement, and S1-successor terminality
+are machine-checked. Symmetric terminality and mutual unreachability are
+hand arguments in PROOF_flagship.md.
 
 The mechanism, sharpened: the P₄ image does not remember WHICH interior
 vertex was the spliced loop. Two distinct (state, match) histories produce
@@ -37,7 +36,7 @@ isomorphic results; the forgotten match is the discrete monodromy.
 
 ## Secondary example (cert_0)
 
-Rule (count-preserving, semantic-D1):
+Rule (count-preserving; passes the bounded semantic-D1 probe):
 
     {(a,a), (a,b)}  →  {(a,b), (c,c)}      (c fresh)
 
@@ -75,11 +74,13 @@ Structural notes:
 
 ## Sweep statistics (all bounds explicit; "in range" claims only)
 
-- 489 enumerated rules (classes A, B, B+) → 238 semantic-D1 non-identity
-  survivors → **52 rules with genuine R1 collisions** at (≤4 vertices,
+- 489 enumerated rules (classes A, B, B+) → 238 non-identity survivors of
+  the semantic-D1 probe over states with ≤4 vertices and ≤3 edges → **52
+  rules with genuine R1 collisions** at (≤4 vertices,
   ≤3 edges); 77 INDEPENDENT pairs, 32 from count-preserving rules.
 - 1,041 of 1,770 two-rule systems collide (largest: 12 independent pairs).
-- 87 of 226 systems show R2 multiway merges of mutually-unreachable seeds.
+- 87 of 226 systems show R2 multiway merges of seeds classified as mutually
+  unreachable within the recorded search bounds.
 - Rules failing semantic D1 while passing syntactic D1 exist (chain-step:
   12 violating probe states) — the semantic gate is doing real work.
 
@@ -114,21 +115,23 @@ Structural notes:
 
 - ~~N1: hand proof~~ DONE: PROOF_flagship.md (splice), plus Lean
   formalization lean/SpliceCollision.lean (compiling as of this writing).
+  The Lean file proves the concrete collision properties; semantic D1 is
+  bounded sweep evidence and is not formalized there.
 - ~~N2: D3-strict sweep~~ DONE via log query: phenomenon survives, 18/105.
 - ~~N3~~ DONE (POSITIONING.md): novelty gate PASSED. Arrighi–Costes–Maignan's
   sufficient conditions rest on context-preservation + DAG assumptions that
-  exclude splice-type rules — our certificates are sharpness witnesses for
-  their hypotheses ("drop context-preservation and reversibility MUST fail,
-  even census-preservingly"). CGD line assumes global reversibility and
+  exclude splice-type rules. Our concrete example shows that dropping
+  context preservation can permit reversibility to fail, even
+  census-preservingly. CGD line assumes global reversibility and
   derives local structure — our converse. Garden-of-Eden for dynamic
   topology confirmed unclaimed in both. Residual: skim CGD journal PDF
   definitions before submission.
-- ~~N4~~ DONE: of 123 R2 merge examples, 55 reduce to one-step R1
-  collisions, but **68 are genuinely deeper multi-step merges**. One deep
-  merge certified end-to-end (2026-07-27): the "unsplice" rule
-  {(a,b),(b,c)} → {(a,a),(c,b)}, two mutually-unreachable seeds reaching a
-  common witness in 2 steps each; independently replayed, nine checks,
-  CONFIRMED (cert_deep_r2.json).
+- ~~N4~~ CORRECTED: of 123 R2 merge examples, 55 were detected by the
+  original one-step policy-image comparison and 68 were not. That test did
+  not establish minimum merge depth. The historical `cert_deep_r2.json`
+  independently replays two legal two-step paths to a common witness, but
+  its seeds also share a one-step successor. It is therefore a path
+  certificate, not a shortest-path or genuinely-deep-merge certificate.
 - Conjecture stress (2026-07-27): tiers (5,3) and (4,4) — ZERO violations
   of the weak form. At (4,4) collisions explode 52 → 182/238 and exactly
   one rule stays unambiguous ({(a,a),(b,b)} → {(a,b),(b,a)}, rigid; its RHS
@@ -139,7 +142,8 @@ Structural notes:
 - ~~N5~~ DONE, and it produced the program's main conjecture. Define a rule
   to have **history ambiguity** if some image admits a reverse-match at a
   support other than the comatch yielding a predecessor not isomorphic to
-  the original. Empirically, across all 238 semantic-D1 survivors at
+  the original. Empirically, across all 238 bounded semantic-D1 probe
+  survivors at
   (≤4v, ≤3e):
 
       history ambiguity is NECESSARY for collision:
@@ -156,6 +160,7 @@ Structural notes:
   (PROOF_rigidity.md): transport the DPO undo of one application along the
   isomorphism of results and case-split on whether its support hits the
   other comatch — semantic D1 closes one case, unambiguity the other. The
-  perfect empirical necessity record was a theorem in disguise. Track B's
+  perfect empirical necessity record was a theorem in disguise. This is a
+  human-readable theorem pending external or generic Lean review. Track B's
   remaining central problem is the CONVERSE (dichotomy): does independent
   ambiguity force eventual collision?

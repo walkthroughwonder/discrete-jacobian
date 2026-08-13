@@ -86,11 +86,11 @@ def one_step_images(edges, rules):
 
 
 def verify_r2(cert):
-    """Independently replay an R2-deep-merge path certificate: every step of
-    both paths must be a legal one-step image, endpoints must meet at the
-    witness, and the seeds must be canonically distinct. (Reachability
-    separation of the seeds is NOT checked here — it is bounds-relative and
-    documented inside the certificate.)"""
+    """Independently replay an R2 path certificate: every displayed step
+    must be a legal one-step image, endpoints must meet at the witness, and
+    the seeds must be canonically distinct. This does not establish minimum
+    merge depth. Reachability separation is also not checked here because it
+    is bounds-relative and documented inside the certificate."""
     rules = [(tuple(tuple(e) for e in lhs), tuple(tuple(e) for e in rhs))
              for lhs, rhs in cert["rules"]]
     p1 = [[tuple(e) for e in st] for st in cert["path1"]]
@@ -105,7 +105,8 @@ def verify_r2(cert):
         ok = all(canon(p[i + 1]) in one_step_images(p[i], rules)
                  for i in range(len(p) - 1))
         checks.append((f"{name} steps all legal ({len(p)-1} steps)", ok))
-        checks.append((f"{name} has >=2 steps", len(p) >= 3))
+        checks.append((f"{name} stores >=2 legal steps (not a depth claim)",
+                       len(p) >= 3))
     w = canon([tuple(e) for e in cert["witness"]])
     checks.append(("path1 ends at witness", canon(p1[-1]) == w))
     checks.append(("path2 ends at witness", canon(p2[-1]) == w))

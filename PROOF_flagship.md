@@ -69,6 +69,8 @@ counterexample.
 
 ## Status
 
-Machine-verified (searcher + independent verifier, cert_flagship.json).
-This document is the human-checkable version. Lean formalization: see
-lean/SpliceCollision.lean.
+The finite min-policy certificate is independently replayed. The Lean file
+proves source non-isomorphism, step existence, the common successor class,
+and S1-successor terminality. Semantic D1, S2-successor terminality, and
+mutual unreachability are not machine-checked there; the latter two are
+established by the hand argument above.

@@ -1,4 +1,5 @@
-"""Phase 2 sweep: enumerate small D1 rules, filter by semantic D1, search for
+"""Phase 2 sweep: enumerate small D1 rules, filter by the bounded
+semantic-D1 probe, search for
 R1 collisions, classify each collision pair as INDEPENDENT (neither state
 reachable from the other — the strong, Jacobian-shaped class) or DOWNSTREAM
 (one-way reachable). Logs every rule's outcome to sweep_log.jsonl.
@@ -128,7 +129,7 @@ def main():
     print("\n=== SWEEP SUMMARY ===")
     for k2, v in stats.items():
         print(f"  {k2}: {v}")
-    print("\n=== SEMANTIC-D1 SYSTEMS WITH GENUINE COLLISIONS ===")
+    print("\n=== SEMANTIC-D1-PROBE SURVIVORS WITH GENUINE COLLISIONS ===")
     for rule, pairs in finds:
         indep = [p for p in pairs if p["kind"] == "INDEPENDENT"]
         print(f"rule {rule}: {len(indep)} independent, "

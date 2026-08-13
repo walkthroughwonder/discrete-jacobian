@@ -18,9 +18,8 @@ conjectures worth testing. Either outcome of A is a result:
 |---|---|
 | Explicit discrete analogue of the Jacobian phenomenon; minimize + visualize + write up | Empirical rigidity; conjecture a discrete Garden-of-Eden theorem for dynamic topology; attack in B |
 
-**Non-goals.** No claims about physics. No touching the 712/zarankiewicz work
-(on hold, other machine owns it). Kourovka PRs continue independently as
-reviews arrive.
+**Non-goals.** No claims about physics. No touching unrelated research
+repositories. Other projects continue independently.
 
 ---
 
@@ -172,7 +171,7 @@ rigidity table + precisely stated conjecture.
   Kourovka feedback, when it arrives, takes priority (small, fast wins).
 - Phase 0 is pure reading/writing — no compute. Phases 1–2 are exactly the
   SAT-witness workflow already proven on 712, applied to a new domain.
-- The 712/zarankiewicz hold remains absolute until Edwin lifts it.
+- Unrelated research remains out of scope.
 
 ## Immediate next actions (Phase 0 kickoff)
 

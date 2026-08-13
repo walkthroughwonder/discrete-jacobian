@@ -3,14 +3,15 @@
   Stage 1 (singles): all rules in classes A (1-edge LHS, RHS<=2 edges,
     <=1 fresh var), B (2-edge LHS, RHS<=2 edges over LHS vars), and
     B+ (2-edge LHS, RHS<=2 edges, exactly 1 fresh var). Gates: syntactic D1,
-    semantic D1 (probed on all states <=4v <=3e), non-identity. Survivors
+    semantic-D1 probe (all states <=4v <=3e), non-identity. Survivors
     swept for R1 collisions at (4v,3e); colliding rules re-confirmed at
     (5v,4e) restricted probe. Pairs classified INDEPENDENT / DOWNSTREAM.
   Stage 2 (pairs): all unordered pairs of up to 60 stage-1 survivors,
     same sweep at (4v,3e).
   Stage 3 (R2): for up to 40 systems, forward multiway BFS from every seed
-    (<=4v,<=3e; depth<=3, <=300 states/seed, vertex cap 6); R2 merge = two
-    mutually-unreachable seeds with intersecting forward sets.
+    (<=4v,<=3e; depth<=3, <=300 states/seed, vertex cap 6); an R2 merge
+    record uses seeds classified mutually unreachable by the bounded
+    reachability screen and intersecting forward sets.
 
 All bounds are explicit above (no silent caps). Log: maxsweep_log.jsonl.
 """
@@ -231,7 +232,7 @@ def main():
         log.close()
 
     print("\n=== MAXSWEEP SUMMARY ===", flush=True)
-    print(f"rules: {len(all_rules)}; semantic-D1 non-identity survivors: "
+    print(f"rules: {len(all_rules)}; semantic-D1-probe non-identity survivors: "
           f"{len(survivors)}", flush=True)
     print(f"stage1 colliding singles: {len(colliders)}", flush=True)
     for r, rec in colliders[:10]:

@@ -4,7 +4,12 @@
 proof — the definitions, once forced into their final shape by the Phase 1–2
 experiments, contain it.*
 
-**Theorem.** Let ρ be a rewrite rule that is semantically D1 and
+**Proof status:** human-checkable argument, pending external review. This
+theorem is not formalized in Lean.
+
+**Theorem.** Consider a rewrite model in which application has a correct
+reverse at its own comatch and matching/application commute with state
+isomorphisms. Let ρ be a rewrite rule that is semantically D1 and
 history-unambiguous at a state S₁ (for a given application). If a state S₂
 admits an application of ρ whose result is isomorphic to the result of that
 application of S₁, then S₂ ≅ S₁.
@@ -18,7 +23,8 @@ pairs, and no one-step R2 merges of distinct states.
 and a₂ : S₂ → T₂ an application with comatch c₂, with an isomorphism
 φ : T₂ → T₁.
 
-By the DPO undo fact (verified in `core.undo_at_comatch_ok` for every rule),
+By the reverse-at-comatch property assumed above—exercised on finite inputs
+by `core.undo_at_comatch_ok`, which is not itself a generic proof—
 the reverse rule ρ⁻¹ has a match in T₂ supported on c₂ whose application
 yields S₂ exactly. Matching and application commute with isomorphisms, so
 ρ⁻¹ has a match in T₁ supported on φ(c₂) whose result is isomorphic to S₂.
@@ -40,14 +46,16 @@ Compare supports inside T₁:
 2. This explains the perfect empirical record (zero unambiguous colliders
    across 238 rules × four tiers): it could not have been otherwise. The
    experiments were rediscovering a theorem.
-3. The empirical labels "unambiguous" are probe-bounded approximations of
+3. Reverse-at-comatch correctness and isomorphism-equivariance are explicit
+   model assumptions, not theorems of the current generic infrastructure.
+4. The empirical labels "unambiguous" are probe-bounded approximations of
    the theorem's hypothesis; a rule labeled unambiguous in range might be
    ambiguous at larger states. The theorem itself is exact and unbounded.
-4. What remains open is precisely the CONVERSE — the dichotomy question:
+5. What remains open is precisely the CONVERSE — the dichotomy question:
    does (genuine, independent) history ambiguity force eventual collision?
    The 55 ambiguous-but-rigid holdouts at (5,4) show the naive converse
    needs at least a refinement (e.g. "independent ambiguity") to survive.
-5. The proof is two case-splits over an exhaustive support comparison; a
+6. The proof is two case-splits over an exhaustive support comparison; a
    Lean formalization is plausible once matching/application are formalized
    generically (a bigger infrastructure lift than the concrete splice
    proof, but well-defined).
