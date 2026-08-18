@@ -1,0 +1,27 @@
+[dj30] tier (4, 4): census 258 states (0.1s)
+[dj30] G1 (4, 4): n_pairs=465 join=465/465 iso=465/465 -> CI∧confluent (cap_hit=False, 0.6s)
+[dj30] G2 (4, 4): n_pairs=465 join=465/465 iso=465/465 -> CI∧confluent (cap_hit=False, 0.5s)
+[dj30] G3 (4, 4): n_pairs=465 join=465/465 iso=465/465 -> CI∧confluent (cap_hit=False, 0.7s)
+[dj30] G4 (4, 4): n_pairs=465 join=465/465 iso=465/465 -> CI∧confluent (cap_hit=False, 8.7s)
+[dj30] G5 (4, 4): n_pairs=465 join=465/465 iso=465/465 -> CI∧confluent (cap_hit=False, 8.9s)
+[dj30] tier (6, 4): census 356 states (2.1s)
+[dj30] G1 (6, 4): n_pairs=633 join=633/633 iso=633/633 -> CI∧confluent (cap_hit=False, 3.2s)
+[dj30] G2 (6, 4): n_pairs=633 join=633/633 iso=633/633 -> CI∧confluent (cap_hit=False, 2.8s)
+[dj30] G3 (6, 4): n_pairs=633 join=633/633 iso=633/633 -> CI∧confluent (cap_hit=False, 3.3s)
+[dj30] G4 (6, 4): n_pairs=633 join=633/633 iso=633/633 -> CI∧confluent (cap_hit=False, 93.7s)
+[dj30] G5 (6, 4): n_pairs=633 join=633/633 iso=633/633 -> CI∧confluent (cap_hit=False, 94.8s)
+
+grower tier     n_pairs  n_join  n_iso  piskunov_cell                             cap_hit
+-----------------------------------------------------------------------------------------
+G1     (4, 4)       465     465    465  CI∧confluent                              False
+G1     (6, 4)       633     633    633  CI∧confluent                              False
+G2     (4, 4)       465     465    465  CI∧confluent                              False
+G2     (6, 4)       633     633    633  CI∧confluent                              False
+G3     (4, 4)       465     465    465  CI∧confluent                              False
+G3     (6, 4)       633     633    633  CI∧confluent                              False
+G4     (4, 4)       465     465    465  CI∧confluent                              False
+G4     (6, 4)       633     633    633  CI∧confluent                              False
+G5     (4, 4)       465     465    465  CI∧confluent                              False
+G5     (6, 4)       633     633    633  CI∧confluent                              False
+
+[dj30] results: /Users/edwin/Projects/discrete-jacobian/phase1/dj30_results.jsonl

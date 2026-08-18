@@ -1,0 +1,5 @@
+[dj30] tier (4, 4): census 258 states (0.2s)
+[dj30] G1 (4, 4): n_pairs=465 join=465/465 iso=465/465 -> CI∧confluent (cap_hit=False, 0.6s)
+[dj30] G2 (4, 4): n_pairs=465 join=465/465 iso=465/465 -> CI∧confluent (cap_hit=False, 0.5s)
+[dj30] G3 (4, 4): n_pairs=465 join=465/465 iso=465/465 -> CI∧confluent (cap_hit=False, 0.7s)
+[dj30] G4 (4, 4): n_pairs=465 join=465/465 iso=465/465 -> CI∧confluent (cap_hit=False, 9.3s)
