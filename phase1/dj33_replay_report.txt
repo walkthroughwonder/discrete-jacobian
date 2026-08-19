@@ -1,0 +1,111 @@
+IDEA-DJ-33 independent replay (dj33_replay.py)
+jsonl: /workspace/phase1/dj33_results.jsonl
+searcher was dj33_wpp_dia.py; this file does not import it.
+verifier: unmodified phase1/verify_independent.py (blob 4bade5643b9e)
+evidence label: BOUNDED COMPUTATION
+
+adapter tests PASS dim27={{x,y},{x,z}}→{{x,z},{x,w},{y,w},{z,w}}
+                 chain27={{x,y},{y,z}}→{{w,y},{y,x},{x,w},{w,z}}
+  round-trip OK dim27: {{x,y},{x,z}}→{{x,z},{x,w},{y,w},{z,w}}
+  round-trip OK chain27: {{x,y},{y,z}}→{{w,y},{y,x},{x,w},{w,z}}
+
+header experiment=IDEA-DJ-33-WPP-DIA label=BOUNDED COMPUTATION
+summary rows: 7
+
+=== D-IA dim27 tier(4, 4) arity=2 ia=True pairs=68 ===
+  replayed example (S, pred, T): successor+replay+distinct+equal-|E| grower independent: OK
+=== D-IA dim27 tier(6, 4) arity=2 ia=True pairs=70 ===
+  replayed example (S, pred, T): successor+replay+distinct+equal-|E| grower independent: OK
+=== D-IA chain27 tier(4, 4) arity=2 ia=True pairs=71 ===
+  replayed example (S, pred, T): successor+replay+distinct+equal-|E| grower independent: OK
+=== D-IA chain27 tier(6, 4) arity=2 ia=True pairs=91 ===
+  replayed example (S, pred, T): successor+replay+distinct+equal-|E| grower independent: OK
+=== D-IA flat2d tier(4, 4) arity=2 ia=True pairs=83 ===
+  replayed example (S, pred, T): successor+replay+distinct+equal-|E| grower independent: OK
+=== D-IA flat2d tier(6, 4) arity=2 ia=True pairs=103 ===
+  replayed example (S, pred, T): successor+replay+distinct+equal-|E| grower independent: OK
+=== D-IA try3d tier(5, 3) arity=3 ia=True pairs=2 ===
+  replayed example (S, pred, T): successor+replay+distinct+equal-|E| grower independent: OK
+=== D-IA try3d tier(5, 4) arity=3 ia=True pairs=400 ===
+  replayed example (S, pred, T): successor+replay+distinct+equal-|E| grower independent: OK
+=== D-IA sierpinski tier(4, 2) arity=3 ia=False pairs=0 ===
+  no D-IA example (ia=false); nothing to replay
+=== D-IA sierpinski tier(4, 3) arity=3 ia=False pairs=0 ===
+  no D-IA example (ia=false); nothing to replay
+
+=== f_min dim27 tier(4, 4) arity=2 indep=6 match=81 ===
+  replayed independent pair: f_min images agree, states distinct: OK
+=== f_min dim27 tier(6, 4) arity=2 indep=6 match=122 ===
+  replayed independent pair: f_min images agree, states distinct: OK
+=== f_min chain27 tier(4, 4) arity=2 indep=11 match=117 ===
+  replayed independent pair: f_min images agree, states distinct: OK
+=== f_min chain27 tier(6, 4) arity=2 indep=16 match=167 ===
+  replayed independent pair: f_min images agree, states distinct: OK
+=== f_min flat2d tier(4, 4) arity=2 indep=12 match=117 ===
+  replayed independent pair: f_min images agree, states distinct: OK
+=== f_min flat2d tier(6, 4) arity=2 indep=19 match=167 ===
+  replayed independent pair: f_min images agree, states distinct: OK
+=== f_min try3d tier(5, 3) arity=3 indep=0 match=64 ===
+  rigid at this tier (no independent example)
+=== f_min try3d tier(5, 4) arity=3 indep=21 match=3975 ===
+  replayed independent pair: f_min images agree, states distinct: OK
+=== f_min sierpinski tier(4, 2) arity=3 indep=19 match=58 ===
+  replayed independent pair: f_min images agree, states distinct: OK
+=== f_min sierpinski tier(4, 3) arity=3 indep=523 match=1513 ===
+  replayed independent pair: f_min images agree, states distinct: OK
+
+named certs: 5
+=== verifier dim27 dj33cert_dim27.json ===
+  [PASS] states are distinct (canonically)
+  [PASS] state1 has successors
+  [PASS] state2 has successors
+  [PASS] policy images agree (min-successor)
+  [PASS] claimed image matches recomputation
+  [PASS] state2 unreachable from state1 (bounds 2000,4)
+  [PASS] state1 unreachable from state2 (bounds 2000,4)
+VERDICT: CONFIRMED
+  VERDICT: CONFIRMED (second pass)
+=== verifier chain27 dj33cert_chain27.json ===
+  [PASS] states are distinct (canonically)
+  [PASS] state1 has successors
+  [PASS] state2 has successors
+  [PASS] policy images agree (min-successor)
+  [PASS] claimed image matches recomputation
+  [PASS] state2 unreachable from state1 (bounds 2000,4)
+  [PASS] state1 unreachable from state2 (bounds 2000,4)
+VERDICT: CONFIRMED
+  VERDICT: CONFIRMED (second pass)
+=== verifier flat2d dj33cert_flat2d.json ===
+  [PASS] states are distinct (canonically)
+  [PASS] state1 has successors
+  [PASS] state2 has successors
+  [PASS] policy images agree (min-successor)
+  [PASS] claimed image matches recomputation
+  [PASS] state2 unreachable from state1 (bounds 2000,4)
+  [PASS] state1 unreachable from state2 (bounds 2000,4)
+VERDICT: CONFIRMED
+  VERDICT: CONFIRMED (second pass)
+=== verifier try3d dj33cert_try3d.json ===
+  [PASS] states are distinct (canonically)
+  [PASS] state1 has successors
+  [PASS] state2 has successors
+  [PASS] policy images agree (min-successor)
+  [PASS] claimed image matches recomputation
+  [PASS] state2 unreachable from state1 (bounds 2000,5)
+  [PASS] state1 unreachable from state2 (bounds 2000,5)
+VERDICT: CONFIRMED
+  VERDICT: CONFIRMED (second pass)
+=== verifier sierpinski dj33cert_sierpinski.json ===
+  [PASS] states are distinct (canonically)
+  [PASS] state1 has successors
+  [PASS] state2 has successors
+  [PASS] policy images agree (min-successor)
+  [PASS] claimed image matches recomputation
+  [PASS] state2 unreachable from state1 (bounds 2000,4)
+  [PASS] state1 unreachable from state2 (bounds 2000,4)
+VERDICT: CONFIRMED
+  VERDICT: CONFIRMED (second pass)
+
+seven summary rows present
+
+OVERALL: all checks CONFIRMED
