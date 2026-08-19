@@ -1,4 +1,4 @@
-# PRIOR ART — Discrete Jacobian Program (Phase 0.3)
+# PRIOR ART — Provenance Geometry (Phase 0.3)
 
 Swept 2026-07-26. Organized by distance from our question. The two "must-read
 in full before any novelty claim" items are marked ⚠.

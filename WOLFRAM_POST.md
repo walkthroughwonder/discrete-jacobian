@@ -104,7 +104,7 @@ preservingly.
 Everything — code, 14 machine-verified certificates, sweep logs, the Lean
 proof, and a working-draft note — is public:
 
-- Repository: https://github.com/walkthroughwonder/discrete-jacobian
+- Repository: https://github.com/walkthroughwonder/provenance-geometry
 - Archived + citable: https://doi.org/10.5281/zenodo.21630926
 
 I'd love help with: (1) scrutiny of the rigidity theorem's proof

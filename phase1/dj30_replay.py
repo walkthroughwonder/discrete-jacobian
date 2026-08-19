@@ -25,12 +25,14 @@ import json
 import random
 import sys
 from collections import deque
+from pathlib import Path
 
-sys.path.insert(0, "/Users/edwin/Projects/discrete-jacobian/phase1")
+ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT))
 import core
 
-JSONL = "/Users/edwin/Projects/discrete-jacobian/phase1/dj30_results.jsonl"
-REPORT = "/Users/edwin/Projects/discrete-jacobian/phase1/dj30_replay_report.txt"
+JSONL = ROOT / "dj30_results.jsonl"
+REPORT = ROOT / "dj30_replay_report.txt"
 SAMPLE = 20
 SEED = 712
 

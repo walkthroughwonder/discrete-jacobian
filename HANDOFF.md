@@ -1,4 +1,4 @@
-# HANDOFF — Discrete Jacobian Program
+# HANDOFF — Provenance Geometry
 
 *Written 2026-07-28 by the remote (Claude Code on the web) session, for the
 local agent picking the program up. Read this first; it supersedes the

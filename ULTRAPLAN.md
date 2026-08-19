@@ -1,4 +1,4 @@
-# ULTRAPLAN — The Discrete Jacobian Program
+# ULTRAPLAN — Provenance Geometry
 
 **Goal.** Turn the July 2026 Jacobian counterexample into a research program on
 discrete rewriting systems, with two coupled tracks:

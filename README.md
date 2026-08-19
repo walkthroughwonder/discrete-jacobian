@@ -1,6 +1,10 @@
-# The Discrete Jacobian Program
+# Provenance Geometry
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21630926.svg)](https://doi.org/10.5281/zenodo.21630926)
+
+**Provenance Geometry** is the continuing name of the research program first
+released as *The Discrete Jacobian Program*. Historical releases, DOI records,
+and quoted citations retain that original title.
 
 Can a locally invertible rewrite rule fail to be globally injective?
 **Yes** — and this repository contains the explicit certificates, an
@@ -73,7 +77,7 @@ default output already exists, so a rerun produces
 `maxsweep_log.rerun.jsonl` alongside the original for comparison. Pass
 `--out PATH` to choose a destination, or `--force` to overwrite
 deliberately. `phase1/maxsweep_log.jsonl` in particular is pinned by
-SHA-256 from `discrete-jacobian-research`
+SHA-256 from `provenance-geometry-research`
 (`scripts/audit_finite_prefix_obstruction.py`), so overwriting it breaks an
 audit in the other repository.
 
@@ -85,3 +89,6 @@ The Lean proof builds against the pinned environment in lean/ (Lean 4 v4.33.0-rc
 MIT (see LICENSE). To cite this work, use the Zenodo DOI:
 [10.5281/zenodo.21630926](https://doi.org/10.5281/zenodo.21630926)
 (all versions; v1.0.0 specifically is 10.5281/zenodo.21630927).
+
+See [RENAMING.md](RENAMING.md) for repository redirects, stable identifiers,
+and the historical-citation boundary.

@@ -15,7 +15,7 @@ and NOT injective: a census-preserving, locally invertible rewrite rule
 with a policy-independent global collision.
 
 Companion to PROOF_flagship.md and cert_flagship.json in the
-discrete-jacobian program.
+Provenance Geometry program.
 -/
 import Mathlib
 

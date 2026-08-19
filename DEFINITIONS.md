@@ -1,4 +1,4 @@
-# DEFINITIONS — Discrete Jacobian Program (Phase 0.1)
+# DEFINITIONS — Provenance Geometry (Phase 0.1)
 
 Setting: a **state** is a finite hypergraph in Wolfram-model style — a multiset
 of ordered hyperedges over an abstract vertex set, considered up to

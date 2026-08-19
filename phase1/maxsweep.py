@@ -175,7 +175,7 @@ def open_evidence_log(default_path):
     """Open a log for writing without ever silently destroying evidence.
 
     maxsweep_log.jsonl is committed evidence: RESULTS.md's headline
-    statistics are derived from it, and discrete-jacobian-research pins its
+    statistics are derived from it, and provenance-geometry-research pins its
     SHA-256 (scripts/audit_finite_prefix_obstruction.py,
     EXPECTED_LOG_SHA256 = 7352ca0c...). README tells the reader to run this
     script, and it used to open that exact path with "w" -- so one

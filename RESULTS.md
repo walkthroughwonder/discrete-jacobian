@@ -1,4 +1,4 @@
-# RESULTS — Discrete Jacobian Program (first findings, 2026-07-26)
+# RESULTS — Provenance Geometry (first findings, 2026-07-26)
 
 ## Headline (internal claim, pre-external-review)
 
