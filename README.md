@@ -44,6 +44,7 @@ draft. AI assistance (Claude, Anthropic) throughout, disclosed.
 | [DEFINITIONS.md](DEFINITIONS.md) | The definitional framework (D1 grades, collision classes, history ambiguity) |
 | [ADVERSARIAL_REVIEW.md](ADVERSARIAL_REVIEW.md) | Six attacks on our own claims, and what survived |
 | [POSITIONING.md](POSITIONING.md) | Relation to Arrighi et al. (CGD, space-time reversible rewriting) |
+| [CCC_NOTE.md](CCC_NOTE.md) | Exploratory note: the splice rule as a toy aeon (Penrose CCC analogy) with exact information-loss counts to E = 6 |
 | [phase1/](phase1) | Searcher, independent verifier (self-tested), sweep logs, 14 certificates (13 R1 + 1 deep R2; cert_flagship.json is the harvest output once duplicated as cert_9.json — counted once, duplicate removed) |
 
 ## Headline numbers (tier-stamped; "in range" claims only)
