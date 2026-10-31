@@ -116,7 +116,7 @@ self-tests added; full pipeline and logs published for third-party re-run.]
 
 Numbers (all tier-stamped, "in range" only):
 - 489 rules → 238 semantic-D1 non-identity survivors.
-- Tier (≤4v, ≤3e): 52 rules collide (77 INDEPENDENT pairs; 32 from
+- Tier (≤4v, ≤3e): 52 rules collide (86 INDEPENDENT pairs, corrected 2026-10-30 from 77; 32 from
   edge-count-preserving rules; 12 rules fully census-preserving AND
   policy-independent). 13 certificates machine-verified.
 - Tier (≤5v, ≤3e): same 52 colliders; zero unambiguous colliders.

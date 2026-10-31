@@ -77,7 +77,7 @@ Structural notes:
 
 - 489 enumerated rules (classes A, B, B+) → 238 semantic-D1 non-identity
   survivors → **52 rules with genuine R1 collisions** at (≤4 vertices,
-  ≤3 edges); 77 INDEPENDENT pairs, 32 from count-preserving rules.
+  ≤3 edges); 86 INDEPENDENT pairs (corrected 2026-10-30 from 77: the log truncates each rule to 6 pair records), 32 from count-preserving rules.
 - 1,041 of 1,770 two-rule systems collide (largest: 12 independent pairs).
 - 87 of 226 systems show R2 multiway merges of mutually-unreachable seeds.
 - Rules failing semantic D1 while passing syntactic D1 exist (chain-step:
