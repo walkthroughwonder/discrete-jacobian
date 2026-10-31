@@ -124,6 +124,9 @@ evaporation.
 2. **A crossover map.** Define a "next aeon" map that reseeds loops onto a
    loop-free terminal state using only that state's own data. Does the
    resulting cyclic dynamics have a well-defined entropy per cycle?
+   *Done: see [CCC_CROSSOVER.md](CCC_CROSSOVER.md). Forgetting is front-loaded
+   and stops within 9 cycles at E <= 6; most universes freeze, and the reseed
+   rule decides how many keep recurring.*
 3. **Scale-forgetting quotient.** Identify hypergraphs up to edge subdivision
    (a crude conformal rescaling). Do D1 rules that are rigid on isomorphism
    classes start colliding under this coarser quotient?
