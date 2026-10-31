@@ -258,7 +258,7 @@ Numbered by spelled-out name ("Lite Seals Four" = 4). Every check passed. #153 w
 
 ## WC106 to WC2580: checks in five unnamed working notebooks
 
-These notebooks are not in any folder (the cloud file browser lists them under **Unnamed**). Together they hold 432 check cells covering 423 distinct check numbers. 420 cells carry verdicts: 442 passes and 0 failures (426 attributed to a numbered check below, 16 in output cells that follow a cell without a WC header). Twelve cells have no verdict, mostly earlier runs of a number that was rerun later.
+These notebooks are not in any folder (the cloud file browser lists them under **Unnamed**). Byte-identical copies with descriptive names (A to E, plus hard102, hard104, the Kerr metric and scalar field notebooks and WC1321) are in the cloud folder **Rescued unnamed notebooks** (2026-10-31); the originals are untouched. Together they hold 432 check cells covering 423 distinct check numbers. 420 cells carry verdicts: 442 passes and 0 failures (426 attributed to a numbered check below, 16 in output cells that follow a cell without a WC header). Twelve cells have no verdict, mostly earlier runs of a number that was rerun later.
 
 | Notebook | Cloud id (first 8) | Created | Last modified | Size | Check cells | Check numbers | Passes |
 |---|---|---|---|---|---|---|---|
@@ -290,3 +290,7 @@ The checks rotate through a fixed set of families, each rerun with an incrementi
 | Coarse Grain Seal | 12 | 12 | 0 | WC484 to WC2554 |
 | One-off rechecks (G Less H Spot, FS Symmetry Recheck, FS Triangle Recheck) | 3 | 3 | 0 | WC108 to WC110 |
 | WC111 (untitled) | 1 | 0 | 2 | WC111 |
+
+## Causal geometry experiments
+
+The 13 notebooks in the cloud folder "Causal geometry experiments" use a `"held"` verdict instead of `"pass"`. Results, including three first runs and a generations-versus-events bug in two of them, are in [CAUSAL_GEOMETRY.md](CAUSAL_GEOMETRY.md).
