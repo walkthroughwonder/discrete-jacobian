@@ -17,6 +17,7 @@ Each check emits an association with `"pass" -> True|False` and a `"gate"` field
 - **WC73 and WC76 (resolved 2026-10-30).** Both compute the singular series S for the pattern {0, 2, 4}. The exact value is S = 0, because {0, 2, 4} covers every residue mod 3, so the local factor at p = 3 vanishes. WC73 tested the claim "S is nonzero"; its failure is the mathematically correct outcome. WC76 reported S = 1 only because its notebook is corrupted: the full text of WC77 was pasted inside its product loop's iterator, so the loop never ran and the product kept its initial value 1 (reproduced exactly). Rerun cleanly in Wolfram Language, WC76 passes with S = 0. No genuine contradiction remains.
 - **Cleanup note (2026-10-30).** Five empty or superseded items were moved to the cloud Trash (two blank notebooks, a scratchpad link, WC103 "old" and WC37 "Error"); the scans above were taken before that, so WC37 Error and WC103 old still appear in the tables.
 - **41 WC notebooks have no pass/fail field** (mostly WC1 to WC31, the earliest runs, which print raw values instead). WC37 "Sort Annihilate Regression Error" was never evaluated (0 outputs).
+- **WC5 and WC19 outputs are unreliable** (neither has a pass/fail field, so the totals above are unaffected): WC5 raised `StringLength::string` errors, and WC19 hit the cloud time limit and then `Partition::npart`.
 
 ## WC series
 
