@@ -293,4 +293,4 @@ The checks rotate through a fixed set of families, each rerun with an incrementi
 
 ## Causal geometry experiments
 
-The 13 notebooks in the cloud folder "Causal geometry experiments" use a `"held"` verdict instead of `"pass"`. Results, including three first runs and a generations-versus-events bug in two of them, are in [CAUSAL_GEOMETRY.md](CAUSAL_GEOMETRY.md).
+The 13 notebooks in the cloud folder "Causal geometry experiments" use a `"held"` verdict instead of `"pass"`. Results, including first runs of four notebooks, fixed copies of two of them in the cloud, and the bugs that kept them from finishing, are in [CAUSAL_GEOMETRY.md](CAUSAL_GEOMETRY.md).
