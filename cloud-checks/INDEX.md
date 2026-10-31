@@ -14,7 +14,7 @@ Each check emits an association with `"pass" -> True|False` and a `"gate"` field
 ### What the failures are
 
 - **Lite Seals: 88 failures, all the same check timing out.** In each of the 88 affected notebooks the single failing verdict carries `"status" -> "TIMEOUT"`: the confluence / critical-pair analysis exceeded the cloud time limit. It is not a wrong mathematical result, and the companion run of the same analysis (L = 3 or 4, 85 states, 147 events, 0 overlapping pairs) passes in the same notebook. The timing-out and non-timing-out notebooks alternate almost perfectly by number, which suggests two batch variants rather than flakiness.
-- **WC73 "S Zero Two Four" and WC76 "S Zero Two Four Seal" are genuine false verdicts, and they disagree with each other.** WC73 expected S nonzero and got `S = 0.`; WC76 expected S = 0 and got `S = 1.`. Both report `factor_p3 = 0`. Worth a rerun before either result is relied on.
+- **WC73 and WC76 (resolved 2026-10-30).** Both compute the singular series S for the pattern {0, 2, 4}. The exact value is S = 0, because {0, 2, 4} covers every residue mod 3, so the local factor at p = 3 vanishes. WC73 tested the claim "S is nonzero"; its failure is the mathematically correct outcome. WC76 reported S = 1 only because its notebook is corrupted: the full text of WC77 was pasted inside its product loop's iterator, so the loop never ran and the product kept its initial value 1 (reproduced exactly). Rerun cleanly in Wolfram Language, WC76 passes with S = 0. No genuine contradiction remains.
 - **Cleanup note (2026-10-30).** Five empty or superseded items were moved to the cloud Trash (two blank notebooks, a scratchpad link, WC103 "old" and WC37 "Error"); the scans above were taken before that, so WC37 Error and WC103 old still appear in the tables.
 - **41 WC notebooks have no pass/fail field** (mostly WC1 to WC31, the earliest runs, which print raw values instead). WC37 "Sort Annihilate Regression Error" was never evaluated (0 outputs).
 
@@ -81,9 +81,9 @@ Each check emits an association with `"pass" -> True|False` and a `"gate"` field
 | WC69 | Split K Five Spot | 2026-09-20 | 9 | 1 | 0 | 1 |
 | WC71 | H2 Existence Spot | 2026-09-20 | 4 | 1 | 0 | 1 |
 | WC72 | H3 Existence Spot | 2026-09-20 | 5 | 2 | 0 | 1 |
-| WC73 | S Zero Two Four **(fail)** | 2026-09-20 | 4 | 0 | 1 | 1 |
+| WC73 | S Zero Two Four **(fail; correct, see above)** | 2026-09-20 | 4 | 0 | 1 | 1 |
 | WC75 | Twin Bound Spot | 2026-09-20 | 4 | 1 | 0 | 1 |
-| WC76 | S Zero Two Four Seal **(fail)** | 2026-09-20 | 9 | 0 | 1 | 1 |
+| WC76 | S Zero Two Four Seal **(fail; corrupted notebook, passes on clean rerun)** | 2026-09-20 | 9 | 0 | 1 | 1 |
 | WC77 | Odd H Absent Spot | 2026-09-20 | 3 | 1 | 0 | 1 |
 | WC78 | Even H Four Spot | 2026-09-20 | 3 | 1 | 0 | 1 |
 | WC81 | Pair H Ten Spot | 2026-09-20 | 10 | 3 | 0 | 3 |
