@@ -4,8 +4,9 @@
 (13 notebooks). Verdicts read from Output cells only, as in
 [INDEX.md](INDEX.md). Three notebooks had never been evaluated and one had
 been aborted; all four were run on 2026-10-31 (details below). Fixed copies of
-three notebooks (two of these plus hard49) now sit beside the originals in the
-cloud, with their outputs saved; the originals are untouched. AI assistance (Claude, Anthropic).*
+four notebooks (these four, except hard39 slim, plus hard49) now sit beside
+the originals in the cloud, with their outputs saved; the originals are
+untouched. AI assistance (Claude, Anthropic).*
 
 The verdict field in this folder is `"held"`; every notebook also carries the
 usual `"claim_3" -> False` and `"hold" -> "HOLD"` guards.
@@ -23,7 +24,7 @@ usual `"claim_3" -> False` and `"hold" -> "HOLD"` guards.
 | hard141 huygens_wave_second_shell_ratio_t9 | 9a6f93f8 | run | **held False** | shell ratio 1.32, 1.46, 0.72; second shell ratio 3.56, 2.05, 1.94 |
 | hard145 huygens_wave_radial_tv_t8 | 806efc25 | run, 13 sub-tests | **4 held, 9 not** | radial total variation, angular entropy, cone IPR and outer-fraction meters; most fail |
 | Causal Graph Metrics, Homology and Wave H Tests | 16e5b1fb | run, 1 message (Set::setraw) | **held False** (2 of 2) | discrete Huygens meter H grows with size (0.06, 0.11, 0.17, 0.23) instead of staying small |
-| Increment Mismatch TV | ad8c0753 | aborted in the cloud; rerun 2026-10-31 with the fix below via a verified Python port ([imtv.py](imtv.py)) | **held False** | TV dim27 vs chain27: 0.988 vs 0.553 at event 50, 0.802 vs 0.298 at event 149. dim27 is above, not below, so the claim is reversed. chain27 matches the stored local reference exactly; dim27 is close (reference 0.994 and 0.849) |
+| Increment Mismatch TV | ad8c0753; fixed copy 55b829cf | aborted in the cloud; fixed copy ([imtv_fast.wl](imtv_fast.wl)) run in the cloud 2026-10-31, matching the Python port [imtv.py](imtv.py) | **held False** | TV dim27 vs chain27: 0.988 vs 0.553 at event 50, 0.802 vs 0.298 at event 149. dim27 is above, not below, so the claim is reversed. chain27 matches the stored local reference exactly; dim27 is close (reference 0.994 and 0.849) |
 | Wolfram Model Geometry, Dimension and Injectivity Experiments | 57a3ac7a | exploratory log, 18 inputs; every failing cell was rerun cleanly later (see below) | no verdict field (measurements only) | dim27 vs chain27 at the same sizes: ball-growth dimension 1.82 vs 1.79, line-graph 1.93 vs 1.81; four-point hyperbolicity 0.91 vs 0.08 (diameters 15 and 28); local cycle density 0.63 vs 0.74; Forman curvature mean -5.07 vs -4.92 |
 | Same, code only (no outputs) | 03e12762 | code copy | none | input-only copy of the notebook above |
 | hard39 to hard51 Spectral Dimension and Tesseract Horizon Tests | 822fbbbc; hard49 fixed copy 3cfbf601 | log of 13 tests in 23 runs; all 65 message cells are in attempts that were rerun cleanly | **mixed: 5 held, 8 not** (final run of each test) | held: hard39, hard43 (deep interior: square 1.82, cube 2.78), hard48 (parity window), hard49 (after the fix below), hard50 (horizon window, square 1.81, cube 2.74). Not held: hard40 (tesseract baseline reads 3.19, below its 3.5 to 4.5 band), hard41, hard42, hard44 to hard47, hard51 |
@@ -87,6 +88,13 @@ the port: the notebook scans every ordered pair of edges at every event, which
 is far beyond the cloud plan's time limit, while the port finishes in about
 4 seconds.
 
+The fixed cloud copy ([imtv_fast.wl](imtv_fast.wl)) keeps the same selection
+rule but finds all candidate matches per event with one vectorized comparison,
+keeping the original (i1, i2) order so ties break the same way. In a fresh
+kernel it matches the Python port exactly over all 150 events for both rules
+(same TV sums, sums of squares and candidate counts, 75430 and 44487), takes
+about 13 s, and in the cloud returned the same verdict with its output saved.
+
 ## Bug found in hard49 (chord-fill-parity)
 
 The square grid is bipartite, so with a single random chord the walk never
@@ -102,8 +110,7 @@ Cloud note: an Input cell stored as plain text is parsed by the cloud front
 end, which turned `UndirectedEdge @@@ list` into a broken `ApplyOne[...]`
 expression. The fixed copy uses `Apply[UndirectedEdge, list, {1}]` instead.
 
-## Next steps
+## Status
 
-* If Increment Mismatch TV should run in the cloud, apply the `Key[#]` fix
-  and replace the all-pairs scan with a match index (or keep the Python port
-  as the reference).
+Every notebook in the folder now has a final reading. Nothing is left
+unevaluated or aborted, and no remaining verdict depends on an errored cell.
