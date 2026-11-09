@@ -1,0 +1,111 @@
+{
+ "kind": "R1-collision",
+ "policy": "min-successor",
+ "tier": [
+  4,
+  4
+ ],
+ "arity": 2,
+ "preset": "flat2d",
+ "experiment": "IDEA-DJ-33-WPP-DIA",
+ "rules": [
+  [
+   [
+    [
+     "x",
+     "y"
+    ],
+    [
+     "y",
+     "z"
+    ]
+   ],
+   [
+    [
+     "x",
+     "z"
+    ],
+    [
+     "z",
+     "w"
+    ],
+    [
+     "w",
+     "x"
+    ],
+    [
+     "w",
+     "y"
+    ]
+   ]
+  ]
+ ],
+ "state1": [
+  [
+   0,
+   0
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   2,
+   1
+  ]
+ ],
+ "state2": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   2,
+   1
+  ],
+  [
+   2,
+   1
+  ]
+ ],
+ "claimed_image": [
+  [
+   0,
+   0
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   1,
+   3
+  ],
+  [
+   2,
+   0
+  ],
+  [
+   2,
+   3
+  ]
+ ],
+ "independence_bounds": {
+  "max_states": 2000,
+  "max_verts": 4
+ },
+ "independence_argument": "equal-edge-count-grower",
+ "note": "IDEA-DJ-33-WPP-DIA pending (unnamed): ST_PRESETS flat2d f_min independent collision at tier [4, 4] arity=2. BOUNDED COMPUTATION. independence_bounds.max_verts = census maxv (Q5's max_verts=7 does not complete on this grower in verify_independent.py). Equal-|E| grower pairs are mutually unreachable at any bound. Not named until verify_independent.py (blob 4bade5643b9e) CONFIRMED. Searcher != verifier."
+}
